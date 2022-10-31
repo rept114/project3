@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				3DFA05C1291013E900EEDA26 /* AppDelegate.swift */,
+				3DFA05D62910142B00EEDA26 /* New Group3 */,
 				3DFA05C3291013E900EEDA26 /* ViewController.swift */,
-				3DFA05C5291013E900EEDA26 /* Main.storyboard */,
 				3DFA05C8291013EC00EEDA26 /* Assets.xcassets */,
+				3DFA05D52910141C00EEDA26 /* Controller */,
+				3DFA05D3291013FC00EEDA26 /* Models */,
 				3DFA05CA291013EC00EEDA26 /* LaunchScreen.storyboard */,
 				3DFA05CD291013EC00EEDA26 /* Info.plist */,
+				3DFA05D42910140300EEDA26 /* vistas */,
 			);
 			path = project3;
+			sourceTree = "<group>";
+		};
+		3DFA05D3291013FC00EEDA26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3DFA05D42910140300EEDA26 /* vistas */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA05C5291013E900EEDA26 /* Main.storyboard */,
+			);
+			name = vistas;
+			sourceTree = "<group>";
+		};
+		3DFA05D52910141C00EEDA26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3DFA05D62910142B00EEDA26 /* New Group3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
