@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3DFA05C2291013E900EEDA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA05C1291013E900EEDA26 /* AppDelegate.swift */; };
-		3DFA05C4291013E900EEDA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA05C3291013E900EEDA26 /* ViewController.swift */; };
+		3DFA05C4291013E900EEDA26 /* EscuelaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA05C3291013E900EEDA26 /* EscuelaController.swift */; };
 		3DFA05C7291013E900EEDA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C5291013E900EEDA26 /* Main.storyboard */; };
 		3DFA05C9291013EC00EEDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C8291013EC00EEDA26 /* Assets.xcassets */; };
 		3DFA05CC291013EC00EEDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05CA291013EC00EEDA26 /* LaunchScreen.storyboard */; };
-		FB477C242912C88C004AED9A /* modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB477C232912C88C004AED9A /* modelo.swift */; };
+		FB477C242912C88C004AED9A /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB477C232912C88C004AED9A /* modelos.swift */; };
+		FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */; };
+		FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */; };
+		FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CF29155F6A00C67DFC /* DocenteController.swift */; };
+		FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DFA05BE291013E900EEDA26 /* project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFA05C1291013E900EEDA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DFA05C3291013E900EEDA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DFA05C3291013E900EEDA26 /* EscuelaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscuelaController.swift; sourceTree = "<group>"; };
 		3DFA05C6291013E900EEDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DFA05C8291013EC00EEDA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DFA05CB291013EC00EEDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DFA05CD291013EC00EEDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB477C232912C88C004AED9A /* modelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelo.swift; sourceTree = "<group>"; };
+		FB477C232912C88C004AED9A /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
+		FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
+		FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioPagosController.swift; sourceTree = "<group>"; };
+		FB8338CF29155F6A00C67DFC /* DocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocenteController.swift; sourceTree = "<group>"; };
+		FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioAsistenciaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,22 +64,21 @@
 		3DFA05C0291013E900EEDA26 /* project3 */ = {
 			isa = PBXGroup;
 			children = (
-				3DFA05C1291013E900EEDA26 /* AppDelegate.swift */,
 				3DFA05D62910142B00EEDA26 /* Recursos */,
 				3DFA05D52910141C00EEDA26 /* Controller */,
-				3DFA05D3291013FC00EEDA26 /* Models */,
-				3DFA05CD291013EC00EEDA26 /* Info.plist */,
+				3DFA05D3291013FC00EEDA26 /* Modelos */,
+				FB8338CA2915597C00C67DFC /* App */,
 				3DFA05D42910140300EEDA26 /* vistas */,
 			);
 			path = project3;
 			sourceTree = "<group>";
 		};
-		3DFA05D3291013FC00EEDA26 /* Models */ = {
+		3DFA05D3291013FC00EEDA26 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
-				FB477C232912C88C004AED9A /* modelo.swift */,
+				FB477C232912C88C004AED9A /* modelos.swift */,
 			);
-			name = Models;
+			name = Modelos;
 			sourceTree = "<group>";
 		};
 		3DFA05D42910140300EEDA26 /* vistas */ = {
@@ -86,7 +93,11 @@
 		3DFA05D52910141C00EEDA26 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3DFA05C3291013E900EEDA26 /* ViewController.swift */,
+				FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */,
+				FB8338CF29155F6A00C67DFC /* DocenteController.swift */,
+				FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */,
+				3DFA05C3291013E900EEDA26 /* EscuelaController.swift */,
+				FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -97,6 +108,15 @@
 				3DFA05C8291013EC00EEDA26 /* Assets.xcassets */,
 			);
 			name = Recursos;
+			sourceTree = "<group>";
+		};
+		FB8338CA2915597C00C67DFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3DFA05C1291013E900EEDA26 /* AppDelegate.swift */,
+				3DFA05CD291013EC00EEDA26 /* Info.plist */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFA05C4291013E900EEDA26 /* ViewController.swift in Sources */,
-				FB477C242912C88C004AED9A /* modelo.swift in Sources */,
+				FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */,
+				3DFA05C4291013E900EEDA26 /* EscuelaController.swift in Sources */,
+				FB477C242912C88C004AED9A /* modelos.swift in Sources */,
+				FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */,
+				FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */,
+				FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */,
 				3DFA05C2291013E900EEDA26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
