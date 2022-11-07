@@ -17,6 +17,13 @@
 		FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */; };
 		FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CF29155F6A00C67DFC /* DocenteController.swift */; };
 		FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */; };
+		FB90735C29194DCE00A049CD /* ContactoEmergenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90735B29194DCE00A049CD /* ContactoEmergenciaController.swift */; };
+		FB90735E29194F4B00A049CD /* CeldaContactoEmergenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90735D29194F4B00A049CD /* CeldaContactoEmergenciaController.swift */; };
+		FB9073602919547700A049CD /* Dias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90735F2919547700A049CD /* Dias.swift */; };
+		FB9073622919572400A049CD /* CeldaHorarioAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9073612919572400A049CD /* CeldaHorarioAsistenciaController.swift */; };
+		FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90736329195AAC00A049CD /* AsistenciaController.swift */; };
+		FB90736629195AEC00A049CD /* Asistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90736529195AEC00A049CD /* Asistencia.swift */; };
+		FB90736829195C5B00A049CD /* CeldaAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioPagosController.swift; sourceTree = "<group>"; };
 		FB8338CF29155F6A00C67DFC /* DocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocenteController.swift; sourceTree = "<group>"; };
 		FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorarioAsistenciaController.swift; sourceTree = "<group>"; };
+		FB90735B29194DCE00A049CD /* ContactoEmergenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoEmergenciaController.swift; sourceTree = "<group>"; };
+		FB90735D29194F4B00A049CD /* CeldaContactoEmergenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactoEmergenciaController.swift; sourceTree = "<group>"; };
+		FB90735F2919547700A049CD /* Dias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dias.swift; sourceTree = "<group>"; };
+		FB9073612919572400A049CD /* CeldaHorarioAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaHorarioAsistenciaController.swift; sourceTree = "<group>"; };
+		FB90736329195AAC00A049CD /* AsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsistenciaController.swift; sourceTree = "<group>"; };
+		FB90736529195AEC00A049CD /* Asistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asistencia.swift; sourceTree = "<group>"; };
+		FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				FB477C232912C88C004AED9A /* modelos.swift */,
+				FB90735F2919547700A049CD /* Dias.swift */,
+				FB90736529195AEC00A049CD /* Asistencia.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -98,6 +114,11 @@
 				FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */,
 				3DFA05C3291013E900EEDA26 /* EscuelaController.swift */,
 				FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */,
+				FB90735D29194F4B00A049CD /* CeldaContactoEmergenciaController.swift */,
+				FB90736329195AAC00A049CD /* AsistenciaController.swift */,
+				FB9073612919572400A049CD /* CeldaHorarioAsistenciaController.swift */,
+				FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */,
+				FB90735B29194DCE00A049CD /* ContactoEmergenciaController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -190,11 +211,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9073622919572400A049CD /* CeldaHorarioAsistenciaController.swift in Sources */,
 				FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */,
 				3DFA05C4291013E900EEDA26 /* EscuelaController.swift in Sources */,
+				FB90736829195C5B00A049CD /* CeldaAsistenciaController.swift in Sources */,
+				FB9073602919547700A049CD /* Dias.swift in Sources */,
 				FB477C242912C88C004AED9A /* modelos.swift in Sources */,
+				FB90735E29194F4B00A049CD /* CeldaContactoEmergenciaController.swift in Sources */,
 				FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */,
+				FB90735C29194DCE00A049CD /* ContactoEmergenciaController.swift in Sources */,
 				FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */,
+				FB90736629195AEC00A049CD /* Asistencia.swift in Sources */,
+				FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */,
 				FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */,
 				3DFA05C2291013E900EEDA26 /* AppDelegate.swift in Sources */,
 			);

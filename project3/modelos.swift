@@ -8,21 +8,11 @@
 
 import Foundation
 class Modelo {
-    var mes: String
     var segue: String
-    var clase: String
-    var salon: String
-    var hora: String
-    var materia: String
     var menu: String
     
-    init(mes: String, segue: String, clase: String, salon: String, hora: String, materia: String, menu: String) {
-        self.mes = mes
+    init(segue: String, menu: String) {
         self.segue = segue
-        self.clase = clase
-        self.salon = salon
-        self.hora = hora
-        self.materia = materia
         self.menu = menu
     }
     

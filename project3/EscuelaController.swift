@@ -11,13 +11,13 @@ import UIKit
 class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var modelos : [Modelo] = []
     
-    @IBOutlet weak var TvPresidente: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        modelos.append(Modelo(mes: "", segue: "horarioasistencia", clase: "", salon: "", hora: "", materia: "", menu: "Horario y Asistencia"))
-        modelos.append(Modelo(mes: "", segue: "docente", clase: "", salon: "", hora: "", materia: "", menu: "Evaluación Docente"))
-        modelos.append(Modelo(mes: "", segue: "pagos", clase: "", salon: "", hora: "", materia: "", menu: "Calendario de Pagos"))
+        modelos.append(Modelo(segue: "horarioasistencia", menu: "Horario y Asistencia"))
+        modelos.append(Modelo(segue: "docente", menu: "Evaluación Docente"))
+        modelos.append(Modelo(segue: "pagos", menu: "Calendario de Pagos"))
+        modelos.append(Modelo(segue: "contactoemergencia", menu: "Contacto de Emergencia"))
     }
     
     
@@ -52,6 +52,9 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
         if segue.identifier == "pagos" {
             let destino = segue.destination as! CalendarioPagosController
+        }
+        if segue.identifier == "contactoemergencia" {
+            let destino = segue.destination as! ContactoEmergenciaController
         }
     }
 }
