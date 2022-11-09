@@ -13,6 +13,9 @@
 		3DFA05C9291013EC00EEDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C8291013EC00EEDA26 /* Assets.xcassets */; };
 		3DFA05CC291013EC00EEDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05CA291013EC00EEDA26 /* LaunchScreen.storyboard */; };
 		FB477C242912C88C004AED9A /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB477C232912C88C004AED9A /* modelos.swift */; };
+		FB77061E291BF13400722221 /* CafeteriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB77061D291BF13400722221 /* CafeteriaController.swift */; };
+		FB770620291BF1A500722221 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB77061F291BF1A500722221 /* Menu.swift */; };
+		FB770622291BF38900722221 /* CeldaCafeteriaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB770621291BF38900722221 /* CeldaCafeteriaMenuController.swift */; };
 		FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */; };
 		FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */; };
 		FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CF29155F6A00C67DFC /* DocenteController.swift */; };
@@ -35,6 +38,9 @@
 		3DFA05CB291013EC00EEDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DFA05CD291013EC00EEDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB477C232912C88C004AED9A /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
+		FB77061D291BF13400722221 /* CafeteriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeteriaController.swift; sourceTree = "<group>"; };
+		FB77061F291BF1A500722221 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FB770621291BF38900722221 /* CeldaCafeteriaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCafeteriaMenuController.swift; sourceTree = "<group>"; };
 		FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
 		FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioPagosController.swift; sourceTree = "<group>"; };
 		FB8338CF29155F6A00C67DFC /* DocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocenteController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 			children = (
 				FB477C232912C88C004AED9A /* modelos.swift */,
 				FB90735F2919547700A049CD /* Dias.swift */,
+				FB77061F291BF1A500722221 /* Menu.swift */,
 				FB90736529195AEC00A049CD /* Asistencia.swift */,
 			);
 			name = Modelos;
@@ -116,6 +123,8 @@
 				FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */,
 				FB90735D29194F4B00A049CD /* CeldaContactoEmergenciaController.swift */,
 				FB90736329195AAC00A049CD /* AsistenciaController.swift */,
+				FB77061D291BF13400722221 /* CafeteriaController.swift */,
+				FB770621291BF38900722221 /* CeldaCafeteriaMenuController.swift */,
 				FB9073612919572400A049CD /* CeldaHorarioAsistenciaController.swift */,
 				FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */,
 				FB90735B29194DCE00A049CD /* ContactoEmergenciaController.swift */,
@@ -215,12 +224,15 @@
 				FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */,
 				3DFA05C4291013E900EEDA26 /* EscuelaController.swift in Sources */,
 				FB90736829195C5B00A049CD /* CeldaAsistenciaController.swift in Sources */,
+				FB770622291BF38900722221 /* CeldaCafeteriaMenuController.swift in Sources */,
 				FB9073602919547700A049CD /* Dias.swift in Sources */,
 				FB477C242912C88C004AED9A /* modelos.swift in Sources */,
 				FB90735E29194F4B00A049CD /* CeldaContactoEmergenciaController.swift in Sources */,
 				FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */,
 				FB90735C29194DCE00A049CD /* ContactoEmergenciaController.swift in Sources */,
 				FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */,
+				FB770620291BF1A500722221 /* Menu.swift in Sources */,
+				FB77061E291BF13400722221 /* CafeteriaController.swift in Sources */,
 				FB90736629195AEC00A049CD /* Asistencia.swift in Sources */,
 				FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */,
 				FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */,

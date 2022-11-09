@@ -15,10 +15,17 @@ class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        asistencias.append(Asistencia(clase: "", salon: "", hora: ""))
+        asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
         let fecha = Date()
         let calendario = Calendar.current
-        let horaTexto = "\(calendario.component(.hour, from: fecha)):\(calendario.component(.minute, from: fecha))"
+        let minutos = Int(calendario.component(.minute, from: fecha))
+        var minutosTexto = ""
+        if minutos < 10 {
+            minutosTexto = "0" + String(minutos)
+        } else {
+            minutosTexto = String(minutos)
+        }
+        let horaTexto = "\(calendario.component(.hour, from: fecha)):\(minutosTexto)"
         
         lblHoraAsistencia.text = horaTexto
     }
@@ -35,7 +42,7 @@ class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDa
         return asistencias.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "celdaDia") as! CeldaAsistenciaController
+        let celda = tableView.dequeueReusableCell(withIdentifier: "asistencia") as! CeldaAsistenciaController
         celda.lblClase.text = asistencias[indexPath.row].clase
         celda.lblSalon.text = asistencias[indexPath.row].salon
         celda.lblHora.text = asistencias[indexPath.row].hora

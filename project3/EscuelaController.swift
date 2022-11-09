@@ -18,6 +18,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         modelos.append(Modelo(segue: "docente", menu: "Evaluación Docente"))
         modelos.append(Modelo(segue: "pagos", menu: "Calendario de Pagos"))
         modelos.append(Modelo(segue: "contactoemergencia", menu: "Contacto de Emergencia"))
+        modelos.append(Modelo(segue: "cafeteria", menu: "Cafeteria"))
     }
     
     

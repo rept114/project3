@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 class CeldaContactoEmergenciaController: UITableViewCell {
     
-    @IBOutlet weak var lblTelefonoCasa: UILabel!
-    @IBOutlet weak var lblTelefonoPersonal: UILabel!
+    @IBOutlet weak var lblTPersonal: UILabel!
+    @IBOutlet weak var lblTCasa: UILabel!
+    @IBOutlet weak var lblParentesco: UILabel!
+    @IBOutlet weak var lblNombre: UILabel!
     
 }

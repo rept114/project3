@@ -13,6 +13,7 @@ import UIKit
 class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var dias : [Dia] = []
     
+    @IBOutlet weak var TvHoraAsistencia: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -47,7 +48,6 @@ class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITabl
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! AsistenciaController
-        destino.asistencias = Asistencia[TvHoraAsistencia.indexPathForSelectedRow!.row]
     }
 }
 
