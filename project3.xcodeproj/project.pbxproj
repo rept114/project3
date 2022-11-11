@@ -27,6 +27,11 @@
 		FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90736329195AAC00A049CD /* AsistenciaController.swift */; };
 		FB90736629195AEC00A049CD /* Asistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90736529195AEC00A049CD /* Asistencia.swift */; };
 		FB90736829195C5B00A049CD /* CeldaAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */; };
+		FBB28B41291E91E30082E33C /* EditarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B40291E91E30082E33C /* EditarController.swift */; };
+		FBB28B43291E92EE0082E33C /* Contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B42291E92EE0082E33C /* Contactos.swift */; };
+		FBB28B45291E9C130082E33C /* EvaluacionDocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B44291E9C130082E33C /* EvaluacionDocenteController.swift */; };
+		FBB28B47291EA36F0082E33C /* Docente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B46291EA36F0082E33C /* Docente.swift */; };
+		FBB28B49291EA3BA0082E33C /* CeldaDocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B48291EA3BA0082E33C /* CeldaDocenteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,11 @@
 		FB90736329195AAC00A049CD /* AsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsistenciaController.swift; sourceTree = "<group>"; };
 		FB90736529195AEC00A049CD /* Asistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asistencia.swift; sourceTree = "<group>"; };
 		FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaController.swift; sourceTree = "<group>"; };
+		FBB28B40291E91E30082E33C /* EditarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarController.swift; sourceTree = "<group>"; };
+		FBB28B42291E92EE0082E33C /* Contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contactos.swift; sourceTree = "<group>"; };
+		FBB28B44291E9C130082E33C /* EvaluacionDocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionDocenteController.swift; sourceTree = "<group>"; };
+		FBB28B46291EA36F0082E33C /* Docente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Docente.swift; sourceTree = "<group>"; };
+		FBB28B48291EA3BA0082E33C /* CeldaDocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDocenteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 				FB477C232912C88C004AED9A /* modelos.swift */,
 				FB90735F2919547700A049CD /* Dias.swift */,
 				FB77061F291BF1A500722221 /* Menu.swift */,
+				FBB28B46291EA36F0082E33C /* Docente.swift */,
+				FBB28B42291E92EE0082E33C /* Contactos.swift */,
 				FB90736529195AEC00A049CD /* Asistencia.swift */,
 			);
 			name = Modelos;
@@ -121,6 +133,9 @@
 				FB8338D129155FCC00C67DFC /* HorarioAsistenciaController.swift */,
 				3DFA05C3291013E900EEDA26 /* EscuelaController.swift */,
 				FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */,
+				FBB28B48291EA3BA0082E33C /* CeldaDocenteController.swift */,
+				FBB28B44291E9C130082E33C /* EvaluacionDocenteController.swift */,
+				FBB28B40291E91E30082E33C /* EditarController.swift */,
 				FB90735D29194F4B00A049CD /* CeldaContactoEmergenciaController.swift */,
 				FB90736329195AAC00A049CD /* AsistenciaController.swift */,
 				FB77061D291BF13400722221 /* CafeteriaController.swift */,
@@ -222,6 +237,7 @@
 			files = (
 				FB9073622919572400A049CD /* CeldaHorarioAsistenciaController.swift in Sources */,
 				FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */,
+				FBB28B41291E91E30082E33C /* EditarController.swift in Sources */,
 				3DFA05C4291013E900EEDA26 /* EscuelaController.swift in Sources */,
 				FB90736829195C5B00A049CD /* CeldaAsistenciaController.swift in Sources */,
 				FB770622291BF38900722221 /* CeldaCafeteriaMenuController.swift in Sources */,
@@ -231,12 +247,16 @@
 				FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */,
 				FB90735C29194DCE00A049CD /* ContactoEmergenciaController.swift in Sources */,
 				FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */,
+				FBB28B47291EA36F0082E33C /* Docente.swift in Sources */,
 				FB770620291BF1A500722221 /* Menu.swift in Sources */,
 				FB77061E291BF13400722221 /* CafeteriaController.swift in Sources */,
 				FB90736629195AEC00A049CD /* Asistencia.swift in Sources */,
+				FBB28B49291EA3BA0082E33C /* CeldaDocenteController.swift in Sources */,
+				FBB28B45291E9C130082E33C /* EvaluacionDocenteController.swift in Sources */,
 				FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */,
 				FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */,
 				3DFA05C2291013E900EEDA26 /* AppDelegate.swift in Sources */,
+				FBB28B43291E92EE0082E33C /* Contactos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
