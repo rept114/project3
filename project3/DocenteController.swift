@@ -28,7 +28,6 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita"))
 
     }
     
@@ -46,10 +45,10 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
         return 1
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "editarContacto" {
-        let destino = segue.destination as! EditarController
-        destino.callbackActualizar = EditarContacto
-        destino.docentes = docentes[TvContactos.indexPathForSelectedRow!.row]
+        if segue.identifier == "evaluaciondocente" {
+        let destino = segue.destination as! EvaluacionDocenteController
+        
+        
         }
     }
     func EditarContacto (contactos:Contactos) {

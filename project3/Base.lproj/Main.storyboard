@@ -396,10 +396,14 @@
                                         <connections>
                                             <outlet property="lblDocente" destination="xLu-LB-Tsd" id="OWi-AD-deK"/>
                                             <outlet property="lblMateria" destination="rlD-fh-ztN" id="3HQ-VY-F63"/>
-                                            <segue destination="pna-hR-y3R" kind="show" id="XcC-xz-USn"/>
+                                            <segue destination="pna-hR-y3R" kind="show" identifier="evaluaciondocente" id="XcC-xz-USn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lgg-qO-VNj" id="fYQ-hO-GbG"/>
+                                    <outlet property="delegate" destination="Lgg-qO-VNj" id="x19-Vd-3Fg"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vpW-7i-arh"/>

@@ -30,7 +30,6 @@ class ContactoEmergenciaController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        contactos.append(Contactos(nombre: "Juan José Torres Díaz", TCasa: "6444161874", TPersonal: "6441591874", parentesco: "Abuelo Materno"))
 
     }
     

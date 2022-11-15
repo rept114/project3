@@ -10,7 +10,8 @@ import UIKit
 
 class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var modelos : [Modelo] = []
-    
+    var docentes:  [Docente] = []
+    var contactos: [Contactos] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +20,10 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         modelos.append(Modelo(segue: "pagos", menu: "Calendario de Pagos"))
         modelos.append(Modelo(segue: "contactoemergencia", menu: "Contacto de Emergencia"))
         modelos.append(Modelo(segue: "cafeteria", menu: "Cafeteria"))
+        
+        docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita"))
+        
+        contactos.append(Contactos(nombre: "Juan José Torres Díaz", TCasa: "6444161874", TPersonal: "6441591874", parentesco: "Abuelo Materno"))
     }
     
     
@@ -50,12 +55,14 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
         if segue.identifier == "docente" {
             let destino = segue.destination as! DocenteController
+            destino.docentes = docentes
         }
         if segue.identifier == "pagos" {
             let destino = segue.destination as! CalendarioPagosController
         }
         if segue.identifier == "contactoemergencia" {
             let destino = segue.destination as! ContactoEmergenciaController
+            destino.contactos = contactos
         }
     }
 }
