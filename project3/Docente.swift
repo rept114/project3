@@ -10,8 +10,14 @@ import Foundation
 class Docente {
     var Materia: String
     var docente: String
-    init(Materia: String, docente: String) {
+    var calificacion: String
+    var comentario: String
+    var evaluacion: Bool
+    init(Materia: String, docente: String, calificacion: String, comentario: String, evaluacion: Bool) {
         self.Materia = Materia
         self.docente = docente
+        self.calificacion = calificacion
+        self.comentario = comentario
+        self.evaluacion = evaluacion
     }
 }

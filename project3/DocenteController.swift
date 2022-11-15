@@ -39,7 +39,7 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
         //performSegue(withIdentifier: "nuevocontacto", sender: self)
     //}
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 170
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

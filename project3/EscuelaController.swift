@@ -12,6 +12,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     var modelos : [Modelo] = []
     var docentes:  [Docente] = []
     var contactos: [Contactos] = []
+    var fechas : [Fecha] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,9 +22,15 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         modelos.append(Modelo(segue: "contactoemergencia", menu: "Contacto de Emergencia"))
         modelos.append(Modelo(segue: "cafeteria", menu: "Cafeteria"))
         
-        docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita"))
+        docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita", calificacion: "", comentario: "", evaluacion: false))
         
         contactos.append(Contactos(nombre: "Juan José Torres Díaz", TCasa: "6444161874", TPersonal: "6441591874", parentesco: "Abuelo Materno"))
+        
+        fechas.append(Fecha(mes: "Agosto", cantidad: "$5,669", hecho: "Adeudo saldado"))
+        fechas.append(Fecha(mes: "Septiembre", cantidad: "$5,669", hecho: "Adeudo saldado"))
+        fechas.append(Fecha(mes: "Octubre", cantidad: "$5,669", hecho: "Adeudo saldado"))
+        fechas.append(Fecha(mes: "Noviembre", cantidad: "$5,669", hecho: "Adeudo saldado"))
+        fechas.append(Fecha(mes: "Diciembre", cantidad: "$5,669", hecho: "Adeudo no saldado"))
     }
     
     
@@ -59,6 +66,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
         if segue.identifier == "pagos" {
             let destino = segue.destination as! CalendarioPagosController
+            destino.fechas = fechas
         }
         if segue.identifier == "contactoemergencia" {
             let destino = segue.destination as! ContactoEmergenciaController
