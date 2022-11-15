@@ -12,7 +12,7 @@ import UIKit
 
 class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var dias : [Dia] = []
-    
+    var asistencias: [Asistencia] = []
     @IBOutlet weak var TvHoraAsistencia: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,9 @@ class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITabl
         dias.append(Dia(dia: "Viernes"))
         dias.append(Dia(dia: "Sabado"))
         dias.append(Dia(dia: "Domingo"))
+
+            asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        
     }
     
     
@@ -48,6 +51,7 @@ class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITabl
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! AsistenciaController
+        destino.asistencias = asistencias
     }
 }
 

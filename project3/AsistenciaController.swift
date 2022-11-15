@@ -15,7 +15,6 @@ class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
         let fecha = Date()
         let calendario = Calendar.current
         let minutos = Int(calendario.component(.minute, from: fecha))
