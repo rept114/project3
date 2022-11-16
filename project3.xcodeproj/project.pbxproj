@@ -12,6 +12,7 @@
 		3DFA05C7291013E900EEDA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C5291013E900EEDA26 /* Main.storyboard */; };
 		3DFA05C9291013EC00EEDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C8291013EC00EEDA26 /* Assets.xcassets */; };
 		3DFA05CC291013EC00EEDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05CA291013EC00EEDA26 /* LaunchScreen.storyboard */; };
+		FB0E9D4329253C6B00614587 /* ClaseAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */; };
 		FB477C242912C88C004AED9A /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB477C232912C88C004AED9A /* modelos.swift */; };
 		FB51DDC42923EC3500FF8485 /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DDC32923EC3500FF8485 /* Evaluacion.swift */; };
 		FB51DDC62923EE2F00FF8485 /* CeldaCalendarioPagosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DDC52923EE2F00FF8485 /* CeldaCalendarioPagosController.swift */; };
@@ -45,6 +46,7 @@
 		3DFA05C8291013EC00EEDA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DFA05CB291013EC00EEDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DFA05CD291013EC00EEDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaseAsistenciaController.swift; sourceTree = "<group>"; };
 		FB477C232912C88C004AED9A /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
 		FB51DDC32923EC3500FF8485 /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
 		FB51DDC52923EE2F00FF8485 /* CeldaCalendarioPagosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCalendarioPagosController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				3DFA05C3291013E900EEDA26 /* EscuelaController.swift */,
 				FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */,
 				FBB28B48291EA3BA0082E33C /* CeldaDocenteController.swift */,
+				FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */,
 				FBB28B44291E9C130082E33C /* EvaluacionDocenteController.swift */,
 				FBB28B40291E91E30082E33C /* EditarController.swift */,
 				FB51DDC52923EE2F00FF8485 /* CeldaCalendarioPagosController.swift */,
@@ -246,6 +249,7 @@
 			files = (
 				FB9073622919572400A049CD /* CeldaHorarioAsistenciaController.swift in Sources */,
 				FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */,
+				FB0E9D4329253C6B00614587 /* ClaseAsistenciaController.swift in Sources */,
 				FBB28B41291E91E30082E33C /* EditarController.swift in Sources */,
 				3DFA05C4291013E900EEDA26 /* EscuelaController.swift in Sources */,
 				FB90736829195C5B00A049CD /* CeldaAsistenciaController.swift in Sources */,

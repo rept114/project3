@@ -25,7 +25,21 @@ class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITabl
         dias.append(Dia(dia: "Sabado"))
         dias.append(Dia(dia: "Domingo"))
 
-            asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[0].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[0].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[1].asistencias.append(Asistencia(clase: "Estructura de Datos", salon: "E3", hora: "7:00 am"))
+        dias[1].asistencias.append(Asistencia(clase: "Diseño", salon: "E5", hora: "7:00 am"))
+        dias[2].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[2].asistencias.append(Asistencia(clase: "Topicos de fisica", salon: "G18", hora: "7:00 am"))
+        dias[3].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[3].asistencias.append(Asistencia(clase: "Introducción a la carrera", salon: "D5", hora: "7:00 am"))
+        dias[4].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[4].asistencias.append(Asistencia(clase: "Dispositivos Móviles", salon: "D5", hora: "7:00 am"))
+        dias[5].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[5].asistencias.append(Asistencia(clase: "Programación Aeronautica", salon: "D5", hora: "7:00 am"))
+        dias[6].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        dias[6].asistencias.append(Asistencia(clase: "Programación", salon: "D5", hora: "7:00 am"))
+        
         
     }
     
@@ -51,7 +65,7 @@ class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITabl
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! AsistenciaController
-        destino.asistencias = asistencias
+        destino.asistencias = dias[TvHoraAsistencia.indexPathForSelectedRow!.row].asistencias
     }
 }
 

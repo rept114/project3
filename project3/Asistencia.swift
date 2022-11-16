@@ -13,6 +13,7 @@ class Asistencia {
     var clase: String
     var salon: String
     var hora: String
+    var asistencia = false
     init(clase: String, salon: String, hora: String) {
         self.clase = clase
         self.salon = salon

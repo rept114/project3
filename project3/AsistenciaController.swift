@@ -11,6 +11,9 @@ import UIKit
 
 class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var asistencias: [Asistencia] = []
+    @IBOutlet weak var TvAsistencia: UITableView!
+    //var TrueAsistenciaController : Bool
+    @IBOutlet weak var lblAsistenciaController: UILabel!
     @IBOutlet weak var lblHoraAsistencia: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +53,11 @@ class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! ClaseAsistenciaController
+        destino.asistencia = asistencias[TvAsistencia.indexPathForSelectedRow!.row].asistencia
+    }
  
 
+    
 }

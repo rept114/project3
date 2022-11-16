@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 class Dia {
     var dia: String
+    var asistencias : [Asistencia] = []
     init(dia: String) {
         self.dia = dia
     }

@@ -138,7 +138,7 @@
             </objects>
             <point key="canvasLocation" x="1342" y="-551"/>
         </scene>
-        <!--Asistencia-->
+        <!--Clase-->
         <scene sceneID="QdU-VV-Hg6">
             <objects>
                 <viewController id="u8H-Gf-0hv" customClass="AsistenciaController" customModule="project3" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,30 +146,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTA-8Y-1kn">
-                                <rect key="frame" x="20" y="603" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00 a.m." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-gN-Cdq">
-                                <rect key="frame" x="82" y="603" width="82" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-Fi-RhT">
-                                <rect key="frame" x="265" y="603" width="70" height="30"/>
-                                <state key="normal" title="Asistencia"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes asistencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8K-Si-clq">
-                                <rect key="frame" x="20" y="663" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PkR-Lu-D6v" userLabel="TvHoraAsistencia">
-                                <rect key="frame" x="0.0" y="91" width="375" height="472"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="687"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="asistencia" rowHeight="60" id="fV6-vY-qcA" customClass="CeldaAsistenciaController" customModule="project3" customModuleProvider="target">
@@ -186,19 +164,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34g-2X-EVP">
-                                                    <rect key="frame" x="231" y="21" width="42" height="21"/>
+                                                    <rect key="frame" x="136" y="21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhD-UL-dqc">
-                                                    <rect key="frame" x="68" y="20" width="43" height="21"/>
+                                                    <rect key="frame" x="63" y="20" width="43" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00 a.m." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTV-xl-1W0">
-                                                    <rect key="frame" x="293" y="20" width="72" height="21"/>
+                                                    <rect key="frame" x="188" y="20" width="72" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -206,11 +184,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rDY-ht-gxJ" firstAttribute="leading" secondItem="ra4-je-lFg" secondAttribute="leading" constant="10" id="3RG-by-Qmf"/>
-                                                <constraint firstItem="QTV-xl-1W0" firstAttribute="leading" secondItem="34g-2X-EVP" secondAttribute="trailing" constant="20" id="H1t-6p-iC1"/>
+                                                <constraint firstItem="QTV-xl-1W0" firstAttribute="leading" secondItem="34g-2X-EVP" secondAttribute="trailing" constant="10" id="H1t-6p-iC1"/>
                                                 <constraint firstItem="QTV-xl-1W0" firstAttribute="top" secondItem="ra4-je-lFg" secondAttribute="top" constant="20" id="LZb-cd-d7b"/>
                                                 <constraint firstItem="HhD-UL-dqc" firstAttribute="top" secondItem="ra4-je-lFg" secondAttribute="top" constant="20" id="OGU-ZC-UBe"/>
-                                                <constraint firstAttribute="trailing" secondItem="QTV-xl-1W0" secondAttribute="trailing" constant="10" id="RTi-Zt-E6u"/>
-                                                <constraint firstItem="HhD-UL-dqc" firstAttribute="leading" secondItem="rDY-ht-gxJ" secondAttribute="trailing" constant="15" id="nU5-fy-lz1"/>
+                                                <constraint firstItem="HhD-UL-dqc" firstAttribute="leading" secondItem="rDY-ht-gxJ" secondAttribute="trailing" constant="10" id="nU5-fy-lz1"/>
+                                                <constraint firstItem="34g-2X-EVP" firstAttribute="leading" secondItem="HhD-UL-dqc" secondAttribute="trailing" constant="30" id="qC3-fZ-Ges"/>
                                                 <constraint firstItem="34g-2X-EVP" firstAttribute="top" secondItem="ra4-je-lFg" secondAttribute="topMargin" constant="10" id="ukA-bp-nZ2"/>
                                                 <constraint firstItem="rDY-ht-gxJ" firstAttribute="top" secondItem="ra4-je-lFg" secondAttribute="top" constant="20" id="wdI-mw-gk4"/>
                                             </constraints>
@@ -219,6 +197,7 @@
                                             <outlet property="lblClase" destination="rDY-ht-gxJ" id="fed-9L-pdp"/>
                                             <outlet property="lblHora" destination="QTV-xl-1W0" id="wG1-fM-6dp"/>
                                             <outlet property="lblSalon" destination="HhD-UL-dqc" id="E0M-BB-SSe"/>
+                                            <segue destination="ucc-kP-oyY" kind="show" identifier="Claseasistencia" id="BKC-5x-Azg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -231,29 +210,122 @@
                         <viewLayoutGuide key="safeArea" id="CzZ-mm-cH5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PkR-Lu-D6v" firstAttribute="height" secondItem="qPN-1y-68Y" secondAttribute="height" multiplier="0.581281" id="2gB-WE-xML"/>
-                            <constraint firstItem="d8K-Si-clq" firstAttribute="top" secondItem="Bkl-gN-Cdq" secondAttribute="bottom" constant="39" id="4cm-hD-yK1"/>
-                            <constraint firstItem="Bkl-gN-Cdq" firstAttribute="leading" secondItem="kTA-8Y-1kn" secondAttribute="trailing" constant="20" id="6Sb-PJ-Mbb"/>
-                            <constraint firstItem="Bkl-gN-Cdq" firstAttribute="top" secondItem="PkR-Lu-D6v" secondAttribute="bottom" constant="40" id="PGU-Jo-aWR"/>
-                            <constraint firstItem="CzZ-mm-cH5" firstAttribute="trailing" secondItem="7hj-Fi-RhT" secondAttribute="trailing" constant="40" id="SpK-wa-4Qr"/>
-                            <constraint firstItem="7hj-Fi-RhT" firstAttribute="top" secondItem="PkR-Lu-D6v" secondAttribute="bottom" constant="40" id="TU6-B3-iQ1"/>
-                            <constraint firstItem="CzZ-mm-cH5" firstAttribute="trailing" secondItem="d8K-Si-clq" secondAttribute="trailing" constant="20" id="VDq-Dg-w8M"/>
+                            <constraint firstItem="CzZ-mm-cH5" firstAttribute="bottom" secondItem="PkR-Lu-D6v" secondAttribute="bottom" id="EkV-Ol-qBi"/>
                             <constraint firstItem="PkR-Lu-D6v" firstAttribute="top" secondItem="CzZ-mm-cH5" secondAttribute="top" id="bB5-pW-B9V"/>
                             <constraint firstItem="PkR-Lu-D6v" firstAttribute="trailing" secondItem="CzZ-mm-cH5" secondAttribute="trailing" id="mEA-ob-GEU"/>
-                            <constraint firstItem="d8K-Si-clq" firstAttribute="leading" secondItem="CzZ-mm-cH5" secondAttribute="leading" constant="20" id="nYH-2h-uNi"/>
-                            <constraint firstItem="kTA-8Y-1kn" firstAttribute="top" secondItem="PkR-Lu-D6v" secondAttribute="bottom" constant="40" id="wZa-Sz-r1k"/>
                             <constraint firstItem="PkR-Lu-D6v" firstAttribute="leading" secondItem="CzZ-mm-cH5" secondAttribute="leading" id="xJg-0m-XPm"/>
-                            <constraint firstItem="kTA-8Y-1kn" firstAttribute="leading" secondItem="CzZ-mm-cH5" secondAttribute="leading" constant="20" id="zTD-0G-HXa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Asistencia" id="JZO-I3-W7j"/>
+                    <navigationItem key="navigationItem" title="Clase" id="JZO-I3-W7j"/>
                     <connections>
-                        <outlet property="lblHoraAsistencia" destination="Bkl-gN-Cdq" id="Gb9-PB-adA"/>
+                        <outlet property="TvAsistencia" destination="PkR-Lu-D6v" id="7Ac-ds-Yol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VY2-ed-0tB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2344.8000000000002" y="-551.23152709359613"/>
+            <point key="canvasLocation" x="2345" y="-551"/>
+        </scene>
+        <!--Asistencia-->
+        <scene sceneID="DLb-Pk-wr3">
+            <objects>
+                <viewController id="ucc-kP-oyY" customClass="ClaseAsistenciaController" customModule="project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CZF-Ap-lPX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0t-wM-fUI">
+                                <rect key="frame" x="20" y="505" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00 a.m." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oh-r6-fbA">
+                                <rect key="frame" x="82" y="505" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om1-db-yGE">
+                                <rect key="frame" x="265" y="505" width="70" height="30"/>
+                                <state key="normal" title="Asistencia"/>
+                                <connections>
+                                    <action selector="doTapAsistencia:" destination="u8H-Gf-0hv" eventType="touchUpInside" id="rDw-F9-wz0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes asistencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBV-xT-vnc">
+                                <rect key="frame" x="20" y="565" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-OD-Oit">
+                                <rect key="frame" x="20" y="424" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1P-ki-DO4">
+                                <rect key="frame" x="146" y="424" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdI-jd-JaB">
+                                <rect key="frame" x="73" y="424" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00 a.m." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsY-Qd-C1J">
+                                <rect key="frame" x="198" y="424" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.open.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1aQ-OQ-jw9">
+                                <rect key="frame" x="67.666666666666686" y="132" width="240" height="126"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dhT-ZA-WkX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gsY-Qd-C1J" firstAttribute="centerY" secondItem="dhT-ZA-WkX" secondAttribute="centerY" id="1YX-xW-L00"/>
+                            <constraint firstItem="1aQ-OQ-jw9" firstAttribute="top" secondItem="dhT-ZA-WkX" secondAttribute="top" constant="40" id="4sD-tk-OAE"/>
+                            <constraint firstItem="VdI-jd-JaB" firstAttribute="leading" secondItem="YDl-OD-Oit" secondAttribute="trailing" constant="10" id="4yA-qo-XFp"/>
+                            <constraint firstItem="VdI-jd-JaB" firstAttribute="centerY" secondItem="dhT-ZA-WkX" secondAttribute="centerY" id="5MW-Ti-VZw"/>
+                            <constraint firstItem="gsY-Qd-C1J" firstAttribute="leading" secondItem="h1P-ki-DO4" secondAttribute="trailing" constant="10" id="5sl-y5-N41"/>
+                            <constraint firstItem="9oh-r6-fbA" firstAttribute="top" secondItem="VdI-jd-JaB" secondAttribute="bottom" constant="60" id="Bfm-l8-uys"/>
+                            <constraint firstItem="g0t-wM-fUI" firstAttribute="leading" secondItem="dhT-ZA-WkX" secondAttribute="leading" constant="20" id="Ejn-BM-K1b"/>
+                            <constraint firstItem="dhT-ZA-WkX" firstAttribute="trailing" secondItem="qBV-xT-vnc" secondAttribute="trailing" constant="20" id="HKs-T3-k35"/>
+                            <constraint firstItem="1aQ-OQ-jw9" firstAttribute="centerX" secondItem="dhT-ZA-WkX" secondAttribute="centerX" id="JnR-DK-dBH"/>
+                            <constraint firstItem="9oh-r6-fbA" firstAttribute="leading" secondItem="g0t-wM-fUI" secondAttribute="trailing" constant="20" id="Jnm-hZ-ZCH"/>
+                            <constraint firstItem="1aQ-OQ-jw9" firstAttribute="width" secondItem="CZF-Ap-lPX" secondAttribute="width" multiplier="0.64" id="PMT-dl-Fbs"/>
+                            <constraint firstItem="qBV-xT-vnc" firstAttribute="leading" secondItem="dhT-ZA-WkX" secondAttribute="leading" constant="20" id="WKM-Ei-CW1"/>
+                            <constraint firstItem="YDl-OD-Oit" firstAttribute="leading" secondItem="dhT-ZA-WkX" secondAttribute="leading" constant="20" id="a7y-ts-1Hg"/>
+                            <constraint firstItem="g0t-wM-fUI" firstAttribute="top" secondItem="YDl-OD-Oit" secondAttribute="bottom" constant="60" id="cMU-eI-Q7g"/>
+                            <constraint firstItem="qBV-xT-vnc" firstAttribute="top" secondItem="9oh-r6-fbA" secondAttribute="bottom" constant="39" id="gb4-ke-lqs"/>
+                            <constraint firstItem="1aQ-OQ-jw9" firstAttribute="height" secondItem="CZF-Ap-lPX" secondAttribute="height" multiplier="0.157635" id="jJs-2w-lgZ"/>
+                            <constraint firstItem="dhT-ZA-WkX" firstAttribute="trailing" secondItem="om1-db-yGE" secondAttribute="trailing" constant="40" id="mgz-s2-zUT"/>
+                            <constraint firstItem="YDl-OD-Oit" firstAttribute="centerY" secondItem="dhT-ZA-WkX" secondAttribute="centerY" id="mpI-RQ-fwW"/>
+                            <constraint firstItem="h1P-ki-DO4" firstAttribute="centerY" secondItem="dhT-ZA-WkX" secondAttribute="centerY" id="nhS-nh-GWC"/>
+                            <constraint firstItem="h1P-ki-DO4" firstAttribute="leading" secondItem="VdI-jd-JaB" secondAttribute="trailing" constant="30" id="qTf-e7-o5p"/>
+                            <constraint firstItem="om1-db-yGE" firstAttribute="top" secondItem="gsY-Qd-C1J" secondAttribute="bottom" constant="60" id="rBp-qO-L3x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asistencia" id="wBI-zT-zCM"/>
+                    <connections>
+                        <outlet property="Imagen" destination="1aQ-OQ-jw9" id="3TT-GB-9G5"/>
+                        <outlet property="lblAsistenciaController" destination="qBV-xT-vnc" id="LOq-A1-yS4"/>
+                        <outlet property="lblClase" destination="YDl-OD-Oit" id="wX7-JF-gml"/>
+                        <outlet property="lblHoraAsistencia" destination="9oh-r6-fbA" id="kwS-7w-SR2"/>
+                        <outlet property="lblHoraClase" destination="gsY-Qd-C1J" id="xEw-Tk-o9d"/>
+                        <outlet property="lblSalon" destination="VdI-jd-JaB" id="1dr-eM-gxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ci1-14-Q7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3271" y="-551"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lal-7b-r9o">
@@ -881,6 +953,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lock.open.fill" catalog="system" width="128" height="110"/>
         <image name="los-10-sonidos-principales-del-perro" width="1300" height="867"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
@@ -891,6 +964,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
