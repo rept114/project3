@@ -249,6 +249,7 @@
                                 <rect key="frame" x="265" y="505" width="70" height="30"/>
                                 <state key="normal" title="Asistencia"/>
                                 <connections>
+                                    <action selector="doTapAsistencia:" destination="ucc-kP-oyY" eventType="touchUpInside" id="jRo-6F-TnB"/>
                                     <action selector="doTapAsistencia:" destination="u8H-Gf-0hv" eventType="touchUpInside" id="rDw-F9-wz0"/>
                                 </connections>
                             </button>

@@ -13,23 +13,9 @@ class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDa
     var asistencias: [Asistencia] = []
     @IBOutlet weak var TvAsistencia: UITableView!
     //var TrueAsistenciaController : Bool
-    @IBOutlet weak var lblAsistenciaController: UILabel!
-    @IBOutlet weak var lblHoraAsistencia: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let fecha = Date()
-        let calendario = Calendar.current
-        let minutos = Int(calendario.component(.minute, from: fecha))
-        var minutosTexto = ""
-        if minutos < 10 {
-            minutosTexto = "0" + String(minutos)
-        } else {
-            minutosTexto = String(minutos)
-        }
-        let horaTexto = "\(calendario.component(.hour, from: fecha)):\(minutosTexto)"
-        
-        lblHoraAsistencia.text = horaTexto
     }
     
     
@@ -55,9 +41,12 @@ class AsistenciaController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! ClaseAsistenciaController
-        destino.asistencia = asistencias[TvAsistencia.indexPathForSelectedRow!.row].asistencia
+        destino.callbackActualizar = asistenciachecada
+        destino.asistencia = asistencias[TvAsistencia.indexPathForSelectedRow!.row]
     }
- 
+    func asistenciachecada() {
+        TvAsistencia.reloadData()
+    }
 
     
 }

@@ -6,12 +6,13 @@
 //  Copyright © 2022 Alumno. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class ClaseAsistenciaController: UIViewController {
+    
     var asistencia: Asistencia?
     //var TrueAsistenciaController : Bool
+    var callbackActualizar: (() -> Void)?
     
     @IBOutlet weak var Imagen: UIImageView!
     @IBOutlet weak var lblHoraClase: UILabel!
@@ -34,6 +35,9 @@ class ClaseAsistenciaController: UIViewController {
         let horaTexto = "\(calendario.component(.hour, from: fecha)):\(minutosTexto)"
         
         lblHoraAsistencia.text = horaTexto
+        lblClase.text = asistencia?.clase
+        lblSalon.text = asistencia?.salon
+        lblHoraClase.text = asistencia?.hora
     }
     
     
@@ -42,7 +46,17 @@ class ClaseAsistenciaController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
- 
+    @IBAction func doTapAsistencia(_ sender: Any) {
+        if ((asistencia?.asistencia = false) != nil) {
+            asistencia?.asistencia = true
+            lblAsistenciaController.text = "Ya tienes asistencia"
+            callbackActualizar!()
+
+        } else {
+            lblAsistenciaController.text = "Ya tienes asistencia"
+        }
+    }
+    
 
     
 }
