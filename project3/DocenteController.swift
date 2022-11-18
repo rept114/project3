@@ -23,8 +23,10 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
 
-    @IBOutlet weak var TvContactos: UITableView!
+ 
+    @IBOutlet weak var TvDocente: UITableView!
     var docentes: [Docente] = []
+    var evaluado : String = "0"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,7 +41,7 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
         //performSegue(withIdentifier: "nuevocontacto", sender: self)
     //}
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+        return 100
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -47,12 +49,14 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "evaluaciondocente" {
         let destino = segue.destination as! EvaluacionDocenteController
+            destino.evaluacion = evaluado
+            destino.callbackActualizar = evaluacionchecada
         
         
         }
     }
-    func EditarContacto (contactos:Contactos) {
-        TvContactos.reloadData()
+    func evaluacionchecada(docentes:Docente) {
+        TvDocente.reloadData()
     }
 
         }

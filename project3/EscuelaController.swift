@@ -23,6 +23,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         modelos.append(Modelo(segue: "cafeteria", menu: "Cafeteria"))
         
         docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita", calificacion: "", comentario: "", evaluacion: false))
+        docentes.append(Docente(Materia: "Disposistivos Móviles", docente: "Emiliano", calificacion: "", comentario: "", evaluacion: false))
         
         contactos.append(Contactos(nombre: "Juan José Torres Díaz", TCasa: "6444161874", TPersonal: "6441591874", parentesco: "Abuelo Materno"))
         

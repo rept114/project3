@@ -499,6 +499,9 @@
                             <constraint firstItem="vpW-7i-arh" firstAttribute="bottom" secondItem="1XG-c1-Z2R" secondAttribute="bottom" id="ouj-zV-T9U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TvDocente" destination="1XG-c1-Z2R" id="Hyw-82-BtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuO-o5-WKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -612,6 +615,7 @@
                         <outlet property="rate3" destination="pD3-95-jON" id="OMZ-5z-Lbb"/>
                         <outlet property="rate4" destination="MQv-kX-xUf" id="qIU-J9-y7L"/>
                         <outlet property="rate5" destination="fSQ-VE-Pr3" id="Rol-5r-Ab0"/>
+                        <outlet property="txtComentario" destination="gTS-Os-e36" id="BLE-Wd-Bpg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wbx-y0-xDm" userLabel="First Responder" sceneMemberID="firstResponder"/>

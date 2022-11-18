@@ -38,6 +38,12 @@ class ClaseAsistenciaController: UIViewController {
         lblClase.text = asistencia?.clase
         lblSalon.text = asistencia?.salon
         lblHoraClase.text = asistencia?.hora
+        
+        if (asistencia?.asistencia == true){
+            lblAsistenciaController.text = "Ya tienes asistencia"
+            Imagen.tintColor = UIColor(red: 0/255, green: 143/255, blue: 57/255, alpha: 1)
+        }
+        
     }
     
     
@@ -47,10 +53,11 @@ class ClaseAsistenciaController: UIViewController {
     }
 
     @IBAction func doTapAsistencia(_ sender: Any) {
-        if ((asistencia?.asistencia = false) != nil) {
+        if ((asistencia?.asistencia == false) ) {
             asistencia?.asistencia = true
             lblAsistenciaController.text = "Ya tienes asistencia"
             callbackActualizar!()
+            Imagen.tintColor = UIColor(red: 0/255, green: 143/255, blue: 57/255, alpha: 1)
 
         } else {
             lblAsistenciaController.text = "Ya tienes asistencia"
