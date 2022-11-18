@@ -27,6 +27,7 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var TvDocente: UITableView!
     var docentes: [Docente] = []
     var evaluado : String = "0"
+    var cam: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,6 +52,7 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
         let destino = segue.destination as! EvaluacionDocenteController
             destino.evaluacion = evaluado
             destino.callbackActualizar = evaluacionchecada
+            destino.comentario = cam
         
         
         }

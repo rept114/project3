@@ -22,7 +22,7 @@ class EvaluacionDocenteController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if comentario != nil {
+        if comentario != "" {
             comentario = txtComentario.text!
         }
 
@@ -115,7 +115,7 @@ class EvaluacionDocenteController: UIViewController {
     }
     @IBAction func doTapGuardar(_ sender: Any) {
         if callbackActualizar != nil {
-            txtComentario.text = comentario
+            comentario = txtComentario.text!
             evaluacion = calificacion
             callbackActualizar!()
             self.navigationController?.popViewController(animated: true)
