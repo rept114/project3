@@ -15,7 +15,7 @@ class EvaluacionDocenteController: UIViewController {
     @IBOutlet weak var rate3: UIImageView!
     @IBOutlet weak var rate4: UIImageView!
     @IBOutlet weak var rate5: UIImageView!
-    var callbackActualizar: ((Docente) -> Void)?
+    var callbackActualizar: (() -> Void)?
     var calificacion : String = "0"
     var evaluacion : String = "0"
     var comentario : String = ""
@@ -117,7 +117,7 @@ class EvaluacionDocenteController: UIViewController {
         if callbackActualizar != nil {
             txtComentario.text = comentario
             evaluacion = calificacion
-            callbackActualizar!(Docente)
+            callbackActualizar!()
             self.navigationController?.popViewController(animated: true)
         }
     }

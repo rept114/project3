@@ -55,7 +55,7 @@ class DocenteController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         }
     }
-    func evaluacionchecada(docentes:Docente) {
+    func evaluacionchecada() {
         TvDocente.reloadData()
     }
 
