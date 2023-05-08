@@ -16,11 +16,11 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        modelos.append(Modelo(segue: "horarioasistencia", menu: "Naruto Shippuden"))
-        modelos.append(Modelo(segue: "docente", menu: "Boku no Hero Academy"))
-        modelos.append(Modelo(segue: "pagos", menu: "Kimetsu no Yaiba"))
-        modelos.append(Modelo(segue: "contactoemergencia", menu: "Sword art online"))
-        modelos.append(Modelo(segue: "cafeteria", menu: "Assesination Classroom"))
+        modelos.append(Modelo(segue: "horarioasistencia", menu: "Naruto Shippuden", imagen: "descarga"))
+        modelos.append(Modelo(segue: "docente", menu: "Boku no Hero Academy", imagen: "Kimetsu"))
+        modelos.append(Modelo(segue: "pagos", menu: "Kimetsu no Yaiba", imagen: "Kimetsu"))
+        modelos.append(Modelo(segue: "contactoemergencia", menu: "Sword art online", imagen: "Kimetsu"))
+        modelos.append(Modelo(segue: "cafeteria", menu: "Assesination Classroom", imagen: "Kimetsu"))
         
         docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita", calificacion: "", comentario: "", evaluacion: false))
         docentes.append(Docente(Materia: "Disposistivos Móviles", docente: "Emiliano", calificacion: "", comentario: "", evaluacion: false))

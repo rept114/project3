@@ -36,6 +36,7 @@
 		FBB28B45291E9C130082E33C /* EvaluacionDocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B44291E9C130082E33C /* EvaluacionDocenteController.swift */; };
 		FBB28B47291EA36F0082E33C /* Docente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B46291EA36F0082E33C /* Docente.swift */; };
 		FBB28B49291EA3BA0082E33C /* CeldaDocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB28B48291EA3BA0082E33C /* CeldaDocenteController.swift */; };
+		FBD41B752A09A7A20078D492 /* descarga.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FBD41B742A09A7A20078D492 /* descarga.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		FBB28B44291E9C130082E33C /* EvaluacionDocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionDocenteController.swift; sourceTree = "<group>"; };
 		FBB28B46291EA36F0082E33C /* Docente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Docente.swift; sourceTree = "<group>"; };
 		FBB28B48291EA3BA0082E33C /* CeldaDocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDocenteController.swift; sourceTree = "<group>"; };
+		FBD41B742A09A7A20078D492 /* descarga.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = descarga.jpeg; path = ../../../Downloads/descarga.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		3DFA05D62910142B00EEDA26 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				FBD41B742A09A7A20078D492 /* descarga.jpeg */,
 				3DFA05C8291013EC00EEDA26 /* Assets.xcassets */,
 			);
 			name = Recursos;
@@ -237,6 +240,7 @@
 				3DFA05CC291013EC00EEDA26 /* LaunchScreen.storyboard in Resources */,
 				3DFA05C9291013EC00EEDA26 /* Assets.xcassets in Resources */,
 				3DFA05C7291013E900EEDA26 /* Main.storyboard in Resources */,
+				FBD41B752A09A7A20078D492 /* descarga.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
