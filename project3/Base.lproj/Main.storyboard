@@ -352,11 +352,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="los-10-sonidos-principales-del-perro" translatesAutoresizingMaskIntoConstraints="NO" id="kbv-q8-FLs">
-                                <rect key="frame" x="93.666666666666671" y="111.00000000000001" width="187.66666666666663" height="162.33333333333337"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RL4-xe-bjb">
-                                <rect key="frame" x="0.0" y="388" width="375" height="424"/>
+                                <rect key="frame" x="0.0" y="152" width="375" height="660"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celdaMenu" rowHeight="67" id="UVM-YP-ah2" customClass="CeldaMenuController" customModule="project3" customModuleProvider="target">
@@ -390,28 +387,34 @@
                                     <outlet property="delegate" destination="FdT-Db-iAu" id="TtG-O7-Nqs"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erik Rodrigo Pereo Torres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGj-Nv-Yhw">
-                                <rect key="frame" x="20" y="299" width="335" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECIENTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqF-73-59x">
+                                <rect key="frame" x="30.000000000000007" y="111" width="112.66666666666669" height="31"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPZ-DG-MoT">
+                                <rect key="frame" x="266.33333333333331" y="111" width="78.666666666666686" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Ver más" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ze9-l8-7VQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="RL4-xe-bjb" firstAttribute="top" secondItem="OGj-Nv-Yhw" secondAttribute="bottom" constant="60" id="CTy-HA-lqi"/>
-                            <constraint firstItem="OGj-Nv-Yhw" firstAttribute="top" secondItem="kbv-q8-FLs" secondAttribute="bottom" constant="25.666666666666629" id="JBL-kf-j9o"/>
-                            <constraint firstItem="OGj-Nv-Yhw" firstAttribute="leading" secondItem="ze9-l8-7VQ" secondAttribute="leading" constant="20" id="QMD-6q-Xup"/>
-                            <constraint firstItem="ze9-l8-7VQ" firstAttribute="trailing" secondItem="OGj-Nv-Yhw" secondAttribute="trailing" constant="20" id="SLr-I4-P1h"/>
-                            <constraint firstItem="kbv-q8-FLs" firstAttribute="width" secondItem="4oV-v4-9gZ" secondAttribute="width" multiplier="0.5" id="Tnt-QG-k8m"/>
-                            <constraint firstItem="kbv-q8-FLs" firstAttribute="height" secondItem="4oV-v4-9gZ" secondAttribute="height" multiplier="0.2" id="UeC-1A-U6s"/>
-                            <constraint firstItem="kbv-q8-FLs" firstAttribute="top" secondItem="ze9-l8-7VQ" secondAttribute="top" constant="20" id="WgE-FD-Pwx"/>
+                            <constraint firstItem="XqF-73-59x" firstAttribute="top" secondItem="ze9-l8-7VQ" secondAttribute="top" constant="20" id="1bw-RC-QAH"/>
+                            <constraint firstItem="RL4-xe-bjb" firstAttribute="top" secondItem="GPZ-DG-MoT" secondAttribute="bottom" constant="10" id="3U7-0X-8Ma"/>
+                            <constraint firstItem="RL4-xe-bjb" firstAttribute="top" secondItem="XqF-73-59x" secondAttribute="bottom" constant="10" id="4JY-Na-lBc"/>
+                            <constraint firstItem="ze9-l8-7VQ" firstAttribute="trailing" secondItem="GPZ-DG-MoT" secondAttribute="trailing" constant="30" id="cxy-MI-xvT"/>
+                            <constraint firstItem="GPZ-DG-MoT" firstAttribute="top" secondItem="ze9-l8-7VQ" secondAttribute="top" constant="20" id="d3c-pm-Ue9"/>
+                            <constraint firstItem="XqF-73-59x" firstAttribute="leading" secondItem="ze9-l8-7VQ" secondAttribute="leading" constant="30" id="dKq-UP-ET6"/>
                             <constraint firstItem="RL4-xe-bjb" firstAttribute="leading" secondItem="ze9-l8-7VQ" secondAttribute="leading" id="eut-yl-Kf7"/>
                             <constraint firstItem="RL4-xe-bjb" firstAttribute="trailing" secondItem="ze9-l8-7VQ" secondAttribute="trailing" id="ioM-dS-UFy"/>
+                            <constraint firstItem="XqF-73-59x" firstAttribute="width" secondItem="4oV-v4-9gZ" secondAttribute="width" multiplier="0.3" id="m6P-Mc-fC7"/>
                             <constraint firstAttribute="bottom" secondItem="RL4-xe-bjb" secondAttribute="bottom" id="qlD-9s-el4"/>
-                            <constraint firstItem="kbv-q8-FLs" firstAttribute="centerX" secondItem="ze9-l8-7VQ" secondAttribute="centerX" id="wZK-IP-pXs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="dk7-Rs-CSk"/>
@@ -959,7 +962,6 @@
     </scenes>
     <resources>
         <image name="lock.open.fill" catalog="system" width="128" height="110"/>
-        <image name="los-10-sonidos-principales-del-perro" width="1300" height="867"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
