@@ -12,6 +12,8 @@
 		3DFA05C7291013E900EEDA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C5291013E900EEDA26 /* Main.storyboard */; };
 		3DFA05C9291013EC00EEDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C8291013EC00EEDA26 /* Assets.xcassets */; };
 		3DFA05CC291013EC00EEDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05CA291013EC00EEDA26 /* LaunchScreen.storyboard */; };
+		460980E52A1B0056004A9145 /* Descripciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460980E42A1B0056004A9145 /* Descripciones.swift */; };
+		460980E72A1B0166004A9145 /* Capitulos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460980E62A1B0166004A9145 /* Capitulos.swift */; };
 		FB0E9D4329253C6B00614587 /* ClaseAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */; };
 		FB477C242912C88C004AED9A /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB477C232912C88C004AED9A /* modelos.swift */; };
 		FB51DDC42923EC3500FF8485 /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DDC32923EC3500FF8485 /* Evaluacion.swift */; };
@@ -46,6 +48,8 @@
 		3DFA05C8291013EC00EEDA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DFA05CB291013EC00EEDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DFA05CD291013EC00EEDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460980E42A1B0056004A9145 /* Descripciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descripciones.swift; sourceTree = "<group>"; };
+		460980E62A1B0166004A9145 /* Capitulos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capitulos.swift; sourceTree = "<group>"; };
 		FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaseAsistenciaController.swift; sourceTree = "<group>"; };
 		FB477C232912C88C004AED9A /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
 		FB51DDC32923EC3500FF8485 /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FB477C232912C88C004AED9A /* modelos.swift */,
+				460980E42A1B0056004A9145 /* Descripciones.swift */,
 				FB90735F2919547700A049CD /* Dias.swift */,
 				FB77061F291BF1A500722221 /* Menu.swift */,
 				FB51DDC72923EF3A00FF8485 /* CalendariodePagos.swift */,
@@ -122,6 +127,7 @@
 				FBB28B46291EA36F0082E33C /* Docente.swift */,
 				FBB28B42291E92EE0082E33C /* Contactos.swift */,
 				FB90736529195AEC00A049CD /* Asistencia.swift */,
+				460980E62A1B0166004A9145 /* Capitulos.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460980E52A1B0056004A9145 /* Descripciones.swift in Sources */,
 				FB9073622919572400A049CD /* CeldaHorarioAsistenciaController.swift in Sources */,
 				FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */,
 				FB0E9D4329253C6B00614587 /* ClaseAsistenciaController.swift in Sources */,
@@ -260,6 +267,7 @@
 				FB90735E29194F4B00A049CD /* CeldaContactoEmergenciaController.swift in Sources */,
 				FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */,
 				FB90735C29194DCE00A049CD /* ContactoEmergenciaController.swift in Sources */,
+				460980E72A1B0166004A9145 /* Capitulos.swift in Sources */,
 				FB51DDC82923EF3A00FF8485 /* CalendariodePagos.swift in Sources */,
 				FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */,
 				FBB28B47291EA36F0082E33C /* Docente.swift in Sources */,

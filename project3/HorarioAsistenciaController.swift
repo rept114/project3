@@ -13,10 +13,17 @@ import UIKit
 class HorarioAsistenciaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var dias : [Dia] = []
     var asistencias: [Asistencia] = []
+    var capitulos: [Capitulo] = []
+    var descripciones: [Descripcion] = []
     @IBOutlet weak var TvHoraAsistencia: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        descripciones.append(Descripcion(descripcion: "Yuji Itadori decide pasar el tiempo con el Club de Ocultismo del instituto, pese a poseer unas habilidades atléticas extraordinarias. Con el tiempo, descubre que el mundo del oculto es real, y los miembros del club son atacados. Mientras, el misterioso Megumi Fushiguro está buscando un objeto maldito, y su búsqueda le lleva hasta Itadori…."))
+        
+        capitulos.append(Capitulo(imagen: "", episodio: "Temporada: 1", duracion: "Episodios: 24"))
+        
         dias.append(Dia(dia: "Lunes"))
         dias.append(Dia(dia: "Martes"))
         dias.append(Dia(dia: "Miercoles"))

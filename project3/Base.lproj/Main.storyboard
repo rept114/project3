@@ -83,21 +83,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del Anime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiY-WX-MgV">
-                                <rect key="frame" x="40" y="64" width="142" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu4-ga-qwQ">
-                                <rect key="frame" x="40" y="95" width="78" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="53R-YJ-7ym">
-                                <rect key="frame" x="0.0" y="44" width="390" height="337.66666666666669"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3K7-xm-6we">
                                 <rect key="frame" x="0.0" y="381.66666666666674" width="390" height="428.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -171,6 +156,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="53R-YJ-7ym">
+                                <rect key="frame" x="0.0" y="44" width="390" height="337.66666666666669"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de anime" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqC-Bs-zyG">
+                                <rect key="frame" x="30" y="74" width="312" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Año" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh2-r3-9Yd">
+                                <rect key="frame" x="30" y="109" width="30.333333333333329" height="21.000000000000014"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LpZ-Hw-mww"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -179,16 +179,16 @@
                             <constraint firstItem="3K7-xm-6we" firstAttribute="centerX" secondItem="LpZ-Hw-mww" secondAttribute="centerX" id="2n2-ab-ImI"/>
                             <constraint firstItem="LpZ-Hw-mww" firstAttribute="bottom" secondItem="3K7-xm-6we" secondAttribute="bottom" id="5Wl-WY-m04"/>
                             <constraint firstItem="53R-YJ-7ym" firstAttribute="centerX" secondItem="LpZ-Hw-mww" secondAttribute="centerX" id="5jd-ui-cbY"/>
-                            <constraint firstItem="Bu4-ga-qwQ" firstAttribute="top" secondItem="PiY-WX-MgV" secondAttribute="bottom" constant="10" id="D0R-uu-8HO"/>
                             <constraint firstItem="53R-YJ-7ym" firstAttribute="height" secondItem="fgA-rK-gdV" secondAttribute="height" multiplier="0.4" id="G6F-0v-Ow6"/>
                             <constraint firstItem="3K7-xm-6we" firstAttribute="width" secondItem="fgA-rK-gdV" secondAttribute="width" id="N33-8D-2Ez"/>
                             <constraint firstItem="53R-YJ-7ym" firstAttribute="top" secondItem="LpZ-Hw-mww" secondAttribute="top" id="Nxs-IM-dGo"/>
-                            <constraint firstItem="PiY-WX-MgV" firstAttribute="width" secondItem="fgA-rK-gdV" secondAttribute="width" multiplier="0.364103" id="OlN-ng-HUQ"/>
                             <constraint firstItem="3K7-xm-6we" firstAttribute="top" secondItem="53R-YJ-7ym" secondAttribute="bottom" id="Pzd-bd-RnC"/>
-                            <constraint firstItem="Bu4-ga-qwQ" firstAttribute="width" secondItem="fgA-rK-gdV" secondAttribute="width" multiplier="0.2" id="bHV-cD-LOI"/>
-                            <constraint firstItem="PiY-WX-MgV" firstAttribute="top" secondItem="LpZ-Hw-mww" secondAttribute="top" constant="20" id="gYA-h9-KqJ"/>
-                            <constraint firstItem="Bu4-ga-qwQ" firstAttribute="leading" secondItem="LpZ-Hw-mww" secondAttribute="leading" constant="40" id="muI-sO-cFb"/>
-                            <constraint firstItem="PiY-WX-MgV" firstAttribute="leading" secondItem="LpZ-Hw-mww" secondAttribute="leading" constant="40" id="sno-U8-U6Y"/>
+                            <constraint firstItem="Nh2-r3-9Yd" firstAttribute="leading" secondItem="LpZ-Hw-mww" secondAttribute="leading" constant="30" id="SI9-65-Bgv"/>
+                            <constraint firstItem="Nh2-r3-9Yd" firstAttribute="width" secondItem="53R-YJ-7ym" secondAttribute="width" multiplier="0.2" id="a8S-5f-X83"/>
+                            <constraint firstItem="Nh2-r3-9Yd" firstAttribute="top" secondItem="nqC-Bs-zyG" secondAttribute="bottom" constant="10" id="gOp-rq-qD9"/>
+                            <constraint firstItem="nqC-Bs-zyG" firstAttribute="top" secondItem="LpZ-Hw-mww" secondAttribute="top" constant="30" id="l37-CU-B9v"/>
+                            <constraint firstItem="nqC-Bs-zyG" firstAttribute="leading" secondItem="LpZ-Hw-mww" secondAttribute="leading" constant="30" id="uba-we-toW"/>
+                            <constraint firstItem="nqC-Bs-zyG" firstAttribute="width" secondItem="53R-YJ-7ym" secondAttribute="width" multiplier="0.8" id="yhT-dK-4Bx"/>
                         </constraints>
                     </view>
                 </viewController>
