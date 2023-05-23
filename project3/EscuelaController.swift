@@ -13,25 +13,23 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     var docentes:  [Docente] = []
     var contactos: [Contactos] = []
     var fechas : [Fecha] = []
+    var capitulos: [Capitulo] = []
+    var descripciones: [Descripcion] = []
+    var animes: [Anime] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        modelos.append(Modelo(segue: "horarioasistencia", menu: "Naruto Shippuden", imagen: "descarga"))
-        modelos.append(Modelo(segue: "docente", menu: "Boku no Hero Academy", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "pagos", menu: "Kimetsu no Yaiba", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "contactoemergencia", menu: "Sword art online", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "cafeteria", menu: "Assesination Classroom", imagen: "Kimetsu"))
         
-        docentes.append(Docente(Materia: "Estructura de Datos", docente: "Elva Margarita", calificacion: "", comentario: "", evaluacion: false))
-        docentes.append(Docente(Materia: "Disposistivos Móviles", docente: "Emiliano", calificacion: "", comentario: "", evaluacion: false))
+        modelos.append(Modelo(segue: "anime", menu: "Naruto Shippuden", imagen: "descarga"))
+        modelos.append(Modelo(segue: "anime", menu: "Boku no Hero Academy", imagen: "Kimetsu"))
+        modelos.append(Modelo(segue: "anime", menu: "Kimetsu no Yaiba", imagen: "Kimetsu"))
+        modelos.append(Modelo(segue: "anime", menu: "Sword art online", imagen: "Kimetsu"))
+        modelos.append(Modelo(segue: "anime", menu: "Assesination Classroom", imagen: "Kimetsu"))
         
-        contactos.append(Contactos(nombre: "Juan José Torres Díaz", TCasa: "6444161874", TPersonal: "6441591874", parentesco: "Abuelo Materno"))
+        animes[0].descripciones.append(Descripcion(descripcion: "Yuji Itadori decide pasar el tiempo con el Club de Ocultismo del instituto, pese a poseer unas habilidades atléticas extraordinarias. Con el tiempo, descubre que el mundo del oculto es real, y los miembros del club son atacados. Mientras, el misterioso Megumi Fushiguro está buscando un objeto maldito, y su búsqueda le lleva hasta Itadori…."))
+         
+        animes[0].capitulos.append(Capitulo(imagen: "", episodio: "Temporada: 1", duracion: "Episodios: 24"))
         
-        fechas.append(Fecha(mes: "Agosto", cantidad: "$5,669", hecho: "Adeudo saldado"))
-        fechas.append(Fecha(mes: "Septiembre", cantidad: "$5,669", hecho: "Adeudo saldado"))
-        fechas.append(Fecha(mes: "Octubre", cantidad: "$5,669", hecho: "Adeudo saldado"))
-        fechas.append(Fecha(mes: "Noviembre", cantidad: "$5,669", hecho: "Adeudo saldado"))
-        fechas.append(Fecha(mes: "Diciembre", cantidad: "$5,669", hecho: "Adeudo no saldado"))
     }
     
     
@@ -58,7 +56,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         performSegue(withIdentifier: modelos[indexPath.row].segue, sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "horarioasistencia" {
+        if segue.identifier == "anime" {
         let destino = segue.destination as! HorarioAsistenciaController
         }
         if segue.identifier == "docente" {
