@@ -16,6 +16,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     var capitulos: [Capitulo] = []
     var descripciones: [Descripcion] = []
     var animes: [Anime] = []
+    var imagenes: [Imagen] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,6 +30,8 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         animes[0].descripciones.append(Descripcion(descripcion: "Yuji Itadori decide pasar el tiempo con el Club de Ocultismo del instituto, pese a poseer unas habilidades atléticas extraordinarias. Con el tiempo, descubre que el mundo del oculto es real, y los miembros del club son atacados. Mientras, el misterioso Megumi Fushiguro está buscando un objeto maldito, y su búsqueda le lleva hasta Itadori…."))
          
         animes[0].capitulos.append(Capitulo(imagen: "", episodio: "Temporada: 1", duracion: "Episodios: 24"))
+        
+        animes[0].imagenes.append(Imagen(imagen: ""))
         
     }
     

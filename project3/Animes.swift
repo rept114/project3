@@ -10,5 +10,5 @@ import Foundation
 class Anime {
     var descripciones : [Descripcion] = []
     var capitulos : [Capitulo] = []
-
+    var imagenes : [Imagen] = []
 }

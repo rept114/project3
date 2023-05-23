@@ -87,16 +87,30 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="337" id="X9Y-jd-nQ0">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="337"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TvImagen" rowHeight="425" id="X9Y-jd-nQ0" customClass="CeldaAnimeController" customModule="project3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="425"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X9Y-jd-nQ0" id="UH9-NW-exF">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="337"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="425"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-pm-35w">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="425"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SZc-pm-35w" firstAttribute="top" secondItem="UH9-NW-exF" secondAttribute="top" id="FdM-aI-t9O"/>
+                                                <constraint firstItem="SZc-pm-35w" firstAttribute="leading" secondItem="UH9-NW-exF" secondAttribute="leading" id="Ytw-Da-XGP"/>
+                                                <constraint firstAttribute="trailing" secondItem="SZc-pm-35w" secondAttribute="trailing" id="lky-Aa-n7y"/>
+                                                <constraint firstAttribute="bottom" secondItem="SZc-pm-35w" secondAttribute="bottom" id="pqI-zu-Amt"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imagen" destination="SZc-pm-35w" id="TcA-to-n2h"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TvCapitulos" rowHeight="104" id="F0e-Wj-vbh">
-                                        <rect key="frame" x="0.0" y="387" width="390" height="104"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TvCapitulos" rowHeight="104" id="F0e-Wj-vbh" customClass="CeldaAnime2Controller" customModule="project3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="475" width="390" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F0e-Wj-vbh" id="Azy-OX-eDQ">
                                             <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="104"/>
@@ -131,9 +145,14 @@
                                                 <constraint firstItem="lCR-3k-Dfg" firstAttribute="leading" secondItem="mbW-HB-MEG" secondAttribute="trailing" constant="20" id="x57-Jm-POr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="duracion" destination="Moa-TY-UXe" id="ffN-Ka-FO2"/>
+                                            <outlet property="episodio" destination="lCR-3k-Dfg" id="LS9-LM-Ww6"/>
+                                            <outlet property="imagen2" destination="mbW-HB-MEG" id="yuX-VI-qMa"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TvDescripcion" rowHeight="287" id="iWk-fs-FKp">
-                                        <rect key="frame" x="0.0" y="491" width="390" height="287"/>
+                                        <rect key="frame" x="0.0" y="579" width="390" height="287"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iWk-fs-FKp" id="8Fa-fC-j4u">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="287"/>

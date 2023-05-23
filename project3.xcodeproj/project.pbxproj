@@ -25,6 +25,9 @@
 		FB7CA02C2A1D3F2E004B7100 /* Animes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CA02B2A1D3F2E004B7100 /* Animes.swift */; };
 		FB7CA02E2A1D4838004B7100 /* CeldaAnimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CA02D2A1D4838004B7100 /* CeldaAnimeController.swift */; };
 		FB7CA0302A1D4871004B7100 /* AnimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CA02F2A1D4871004B7100 /* AnimeController.swift */; };
+		FB7CA0322A1D51D7004B7100 /* CeldaAnime2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CA0312A1D51D7004B7100 /* CeldaAnime2Controller.swift */; };
+		FB7CA0342A1D5204004B7100 /* CeldaAnime3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CA0332A1D5204004B7100 /* CeldaAnime3Controller.swift */; };
+		FB7CA0362A1D54A4004B7100 /* Imagenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7CA0352A1D54A4004B7100 /* Imagenes.swift */; };
 		FB8338CC29155BAD00C67DFC /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */; };
 		FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */; };
 		FB8338D029155F6A00C67DFC /* DocenteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8338CF29155F6A00C67DFC /* DocenteController.swift */; };
@@ -64,6 +67,9 @@
 		FB7CA02B2A1D3F2E004B7100 /* Animes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animes.swift; sourceTree = "<group>"; };
 		FB7CA02D2A1D4838004B7100 /* CeldaAnimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAnimeController.swift; sourceTree = "<group>"; };
 		FB7CA02F2A1D4871004B7100 /* AnimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeController.swift; sourceTree = "<group>"; };
+		FB7CA0312A1D51D7004B7100 /* CeldaAnime2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAnime2Controller.swift; sourceTree = "<group>"; };
+		FB7CA0332A1D5204004B7100 /* CeldaAnime3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAnime3Controller.swift; sourceTree = "<group>"; };
+		FB7CA0352A1D54A4004B7100 /* Imagenes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imagenes.swift; sourceTree = "<group>"; };
 		FB8338CB29155BAD00C67DFC /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
 		FB8338CD29155EDF00C67DFC /* CalendarioPagosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioPagosController.swift; sourceTree = "<group>"; };
 		FB8338CF29155F6A00C67DFC /* DocenteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocenteController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 				FB90736529195AEC00A049CD /* Asistencia.swift */,
 				460980E62A1B0166004A9145 /* Capitulos.swift */,
 				FB7CA02B2A1D3F2E004B7100 /* Animes.swift */,
+				FB7CA0352A1D54A4004B7100 /* Imagenes.swift */,
 			);
 			name = Modelos;
 			sourceTree = "<group>";
@@ -166,6 +173,8 @@
 				FB77061D291BF13400722221 /* CafeteriaController.swift */,
 				FB770621291BF38900722221 /* CeldaCafeteriaMenuController.swift */,
 				FB7CA02D2A1D4838004B7100 /* CeldaAnimeController.swift */,
+				FB7CA0312A1D51D7004B7100 /* CeldaAnime2Controller.swift */,
+				FB7CA0332A1D5204004B7100 /* CeldaAnime3Controller.swift */,
 				FB9073612919572400A049CD /* CeldaHorarioAsistenciaController.swift */,
 				FB90736729195C5B00A049CD /* CeldaAsistenciaController.swift */,
 				FB90735B29194DCE00A049CD /* ContactoEmergenciaController.swift */,
@@ -277,6 +286,7 @@
 				FB8338CE29155EDF00C67DFC /* CalendarioPagosController.swift in Sources */,
 				FB90735C29194DCE00A049CD /* ContactoEmergenciaController.swift in Sources */,
 				FB7CA02C2A1D3F2E004B7100 /* Animes.swift in Sources */,
+				FB7CA0322A1D51D7004B7100 /* CeldaAnime2Controller.swift in Sources */,
 				460980E72A1B0166004A9145 /* Capitulos.swift in Sources */,
 				FB7CA0302A1D4871004B7100 /* AnimeController.swift in Sources */,
 				FB51DDC82923EF3A00FF8485 /* CalendariodePagos.swift in Sources */,
@@ -289,6 +299,8 @@
 				FB90736629195AEC00A049CD /* Asistencia.swift in Sources */,
 				FBB28B49291EA3BA0082E33C /* CeldaDocenteController.swift in Sources */,
 				FBB28B45291E9C130082E33C /* EvaluacionDocenteController.swift in Sources */,
+				FB7CA0362A1D54A4004B7100 /* Imagenes.swift in Sources */,
+				FB7CA0342A1D5204004B7100 /* CeldaAnime3Controller.swift in Sources */,
 				FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */,
 				FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */,
 				3DFA05C2291013E900EEDA26 /* AppDelegate.swift in Sources */,

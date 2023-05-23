@@ -1,5 +1,5 @@
 //
-//  CeldaAnimeController.swift
+//  CeldaAnime3Controller.swift
 //  project3
 //
 //  Created by Alumno ULSA on 23/05/23.
@@ -8,5 +8,7 @@
 
 import Foundation
 import UIKit
-class CeldaAnimeController: UITableViewCell {
+class CeldaAnime3Controller: UITableViewCell {
+    
+    @IBOutlet weak var descripcion: UILabel!
 }
