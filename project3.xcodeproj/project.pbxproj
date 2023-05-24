@@ -12,6 +12,8 @@
 		3DFA05C7291013E900EEDA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C5291013E900EEDA26 /* Main.storyboard */; };
 		3DFA05C9291013EC00EEDA26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05C8291013EC00EEDA26 /* Assets.xcassets */; };
 		3DFA05CC291013EC00EEDA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFA05CA291013EC00EEDA26 /* LaunchScreen.storyboard */; };
+		463153032A1E935B008EBB6C /* project3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 463153012A1E935B008EBB6C /* project3.xcdatamodeld */; };
+		463153052A1E9821008EBB6C /* BD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463153042A1E9821008EBB6C /* BD.swift */; };
 		FB0E9D4329253C6B00614587 /* ClaseAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */; };
 		FB477C242912C88C004AED9A /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB477C232912C88C004AED9A /* modelos.swift */; };
 		FB51DDC42923EC3500FF8485 /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DDC32923EC3500FF8485 /* Evaluacion.swift */; };
@@ -52,6 +54,8 @@
 		3DFA05C8291013EC00EEDA26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DFA05CB291013EC00EEDA26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DFA05CD291013EC00EEDA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463153022A1E935B008EBB6C /* project3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = project3.xcdatamodel; sourceTree = "<group>"; };
+		463153042A1E9821008EBB6C /* BD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BD.swift; sourceTree = "<group>"; };
 		FB0E9D4229253C6B00614587 /* ClaseAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaseAsistenciaController.swift; sourceTree = "<group>"; };
 		FB477C232912C88C004AED9A /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
 		FB51DDC32923EC3500FF8485 /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		3DFA05B5291013E900EEDA26 = {
 			isa = PBXGroup;
 			children = (
+				463153042A1E9821008EBB6C /* BD.swift */,
+				463153012A1E935B008EBB6C /* project3.xcdatamodeld */,
 				3DFA05C0291013E900EEDA26 /* project3 */,
 				3DFA05BF291013E900EEDA26 /* Products */,
 			);
@@ -295,6 +301,8 @@
 				FB7CA0342A1D5204004B7100 /* CeldaAnime3Controller.swift in Sources */,
 				FB90736429195AAC00A049CD /* AsistenciaController.swift in Sources */,
 				FB8338D229155FCC00C67DFC /* HorarioAsistenciaController.swift in Sources */,
+				463153032A1E935B008EBB6C /* project3.xcdatamodeld in Sources */,
+				463153052A1E9821008EBB6C /* BD.swift in Sources */,
 				3DFA05C2291013E900EEDA26 /* AppDelegate.swift in Sources */,
 				FBB28B43291E92EE0082E33C /* Contactos.swift in Sources */,
 			);
@@ -492,6 +500,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		463153012A1E935B008EBB6C /* project3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				463153022A1E935B008EBB6C /* project3.xcdatamodel */,
+			);
+			currentVersion = 463153022A1E935B008EBB6C /* project3.xcdatamodel */;
+			path = project3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3DFA05B6291013E900EEDA26 /* Project object */;
 }

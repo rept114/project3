@@ -6,25 +6,19 @@
 //  Copyright © 2022 Alumno. All rights reserved.
 //
 import UIKit
+import CoreData
 
 class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var modelos: [Modelo] = []
     var animes: [Anime] = []
     
     @IBOutlet weak var TvInicio: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        modelos.append(Modelo(segue: "anime", menu: "Naruto Shippuden", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "anime", menu: "Boku no Hero Academy", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "anime", menu: "Kimetsu no Yaiba", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "anime", menu: "Sword art online", imagen: "Kimetsu"))
-        modelos.append(Modelo(segue: "anime", menu: "Assesination Classroom", imagen: "Kimetsu"))
-        modelos[0].animes.append(Anime(descripcion: "Naruto, un aprendiz de ninja de la Aldea Oculta de Konoha es un chico travieso que desea llegar a ser el Hokage de la aldea para demostrar a todos lo que vale. Lo que descubre al inicio de la historia es que la gente le mira con desconfianza porque en su interior está encerrado el demonio Kyubi que una vez destruyó la aldea, y que el anterior líder de la misma tuvo que encerrar en su cuerpo siendo aún muy pequeño, a coste de su vida. Aunque sus compañeros no saben esto, tampoco le aprecian porque es mal estudiante y siempre está haciendo bromas. Sin embargo, la forma de actuar y la determinación de Naruto demuestran a los demás que puede llegar muy lejos, y el recelo de los otros chicos se va disipando. Naruto y sus compañeros Sakura y Sasuke, junto a su maestro Kakashi tendrán que enfrentarse a una serie de combates y misiones a lo largo de la historia que les permitirán mejorar y crecer. Naruto se vera enfrentado a sus principales enemigos Akatsuki, Itachi y Kisame.", capitulo: "220 episodios", temporada: "6 temporadas", imagenP: "Kimetsu", imagenC: "Kimetsu", titulo: "Naruto Shippuden"))
-
-        
+        // Cargar datos desde la base de datos
+        cargarDatosDesdeBaseDeDatos()
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +37,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMenu") as! CeldaMenuController
         celda.lblMenu.text = modelos[indexPath.row].menu
-        celda.lblImagen.image = UIImage(named:modelos[indexPath.row].imagen)
+        celda.lblImagen.image = UIImage(named: modelos[indexPath.row].imagen)
         return celda
     }
     
@@ -61,7 +55,57 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
             if let indexPath = TvInicio.indexPathForSelectedRow {
                 let destino = segue.destination as! AnimeController
                 destino.animes = modelos[indexPath.row].animes
-                destino.selectedTitle = modelos[indexPath.row].menu            }
+                destino.selectedTitle = modelos[indexPath.row].menu
+            }
+        }
+    }
+    
+    // Función para cargar datos desde la base de datos
+    func cargarDatosDesdeBaseDeDatos() {
+        let context = DataBaseConnection.shared.viewContext
+        
+        // Consulta para obtener los datos de los modelos
+        let fetchRequestModelos: NSFetchRequest<ModeloEntity> = ModeloEntity.fetchRequest()
+        
+        do {
+            let modelosEntities = try context.fetch(fetchRequestModelos)
+            for modeloEntity in modelosEntities {
+                let segue = "anime"
+                let menu = modeloEntity.menu ?? ""
+                let imagen = modeloEntity.imagen ?? ""
+                
+                let modelo = Modelo(segue: segue, menu: menu, imagen: imagen)
+                modelos.append(modelo)
+            }
+        } catch {
+            print("Error al ejecutar la consulta de modelos: \(error)")
+            return
+        }
+        
+        // Consulta para obtener los datos de los animes
+        let fetchRequestAnimes: NSFetchRequest<AnimeEntity> = AnimeEntity.fetchRequest()
+        
+        do {
+            let animesEntities = try context.fetch(fetchRequestAnimes)
+            for animeEntity in animesEntities {
+                let titulo = animeEntity.titulo ?? ""
+                let descripcion = animeEntity.descripcion ?? ""
+                let capitulo = animeEntity.capitulo ?? ""
+                let temporada = animeEntity.temporada ?? ""
+                let imagenP = animeEntity.imagenP ?? ""
+                let imagenC = animeEntity.imagenC ?? ""
+                
+                let anime = Anime(descripcion: descripcion, capitulo: capitulo, temporada: temporada, imagenP: imagenP, imagenC: imagenC, titulo: titulo)
+                animes.append(anime)
+            }
+        } catch {
+            print("Error al ejecutar la consulta de animes: \(error)")
+            return
+        }
+        
+        // Agregar los animes cargados al primer modelo (puedes ajustar esto según tus necesidades)
+        if !animes.isEmpty {
+            modelos[0].animes = animes
         }
     }
 }

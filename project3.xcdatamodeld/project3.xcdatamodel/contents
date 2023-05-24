@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="Model">
+    <entity name="AnimeEntity" representedClassName="AnimeEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="capitulo" optional="YES" attributeType="String"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="imagenC" optional="YES" attributeType="String"/>
+        <attribute name="imagenP" optional="YES" attributeType="String"/>
+        <attribute name="temporada" optional="YES" attributeType="String"/>
+        <attribute name="titulo" optional="YES" attributeType="String"/>
+        <relationship name="modelos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ModeloEntity" inverseName="animes" inverseEntity="ModeloEntity"/>
+    </entity>
+    <entity name="ModeloEntity" representedClassName="ModeloEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="imagen" optional="YES" attributeType="String"/>
+        <attribute name="menu" optional="YES" attributeType="String"/>
+        <relationship name="animes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AnimeEntity" inverseName="modelos" inverseEntity="AnimeEntity"/>
+    </entity>
+    <elements>
+        <element name="ModeloEntity" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="AnimeEntity" positionX="-54" positionY="9" width="128" height="134"/>
+    </elements>
+</model>
