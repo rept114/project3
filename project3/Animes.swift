@@ -14,12 +14,14 @@ class Anime {
     var imagenP: String
     var imagenC: String
     var titulo: String
-    init(descripcion: String, capitulo: String, temporada:String, imagenP:String, imagenC:String, titulo: String) {
+    let imageURL: URL? // Agrega esta propiedad para almacenar la URL de la imagen
+    init(descripcion: String, capitulo: String, temporada:String, imagenP:String, imagenC:String, titulo: String, imageURL: URL?) {
         self.descripcion = descripcion
         self.capitulo = capitulo
         self.imagenC = imagenC
         self.imagenP = imagenP
         self.temporada = temporada
         self.titulo = titulo
+        self.imageURL = imageURL
     }
 }

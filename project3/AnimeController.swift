@@ -19,8 +19,20 @@ class AnimeController: UIViewController, UITableViewDelegate, UITableViewDataSou
             celda.lblDescripcion.text = animes[indexPath.row].descripcion
             celda.lblTemporadas.text = animes[indexPath.row].temporada
             celda.lblCapitulos.text = animes[indexPath.row].capitulo
-            celda.lblImagenP.image = UIImage(named:animes[indexPath.row].imagenP)
-            celda.lblImagenC.image = UIImage(named:animes[indexPath.row].imagenC)
+            //celda.lblImagenP.image = UIImage(named:animes[indexPath.row].imagenP)
+            //celda.lblImagenC.image = UIImage(named:animes[indexPath.row].imagenC)
+            
+            if let imageURL = animes[indexPath.row].imageURL {
+                URLSession.shared.dataTask(with: imageURL) { data, response, error in
+                    if let data = data {
+                        DispatchQueue.main.async {
+                            celda.lblImagenP.image = UIImage(data: data)
+                            celda.lblImagenC.image = UIImage(data: data)
+                        }
+                    }
+                }.resume()
+            }
+            
             return celda
         } else {
             // En caso de que no se pueda obtener la celda correctamente, se devuelve una celda genérica

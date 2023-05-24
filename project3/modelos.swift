@@ -12,10 +12,12 @@ class Modelo {
     var menu: String
     var imagen: String
     var animes : [Anime] = []
-    init(segue: String, menu: String, imagen: String) {
+    let imageURL: URL? // Agrega esta propiedad para almacenar la URL de la imagen
+    init(segue: String, menu: String, imagen: String, imageURL: URL?) {
         self.segue = segue
         self.menu = menu
         self.imagen = imagen
+        self.imageURL = imageURL
     }
     
 }

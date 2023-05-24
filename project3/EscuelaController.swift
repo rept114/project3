@@ -6,19 +6,22 @@
 //  Copyright © 2022 Alumno. All rights reserved.
 //
 import UIKit
-import CoreData
 
 class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var modelos: [Modelo] = []
     var animes: [Anime] = []
     
     @IBOutlet weak var TvInicio: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Cargar datos desde la base de datos
-        cargarDatosDesdeBaseDeDatos()
+        modelos.append(Modelo(segue: "anime", menu: "Evangelion", imagen: "", imageURL: URL(string: "https://static.wikia.nocookie.net/doblaje/images/a/a6/Neon_Genesis_Evangelion_-_Poster.jpg/revision/latest?cb=20220519030722&path-prefix=es")))
+
+        modelos.append(Modelo(segue: "anime", menu: "Dragon Ball Z", imagen: "", imageURL: URL(string: "https://static.wikia.nocookie.net/doblaje/images/7/7c/Dragon-Ball-Z.png/revision/latest?cb=20200911193425&path-prefix=es")))
+        modelos.append(Modelo(segue: "anime", menu: "Death Note", imagen: "", imageURL: URL(string: "https://m.media-amazon.com/images/I/716ASj7z2GL._AC_UF894,1000_QL80_.jpg")))
+        modelos.append(Modelo(segue: "anime", menu: "Chainsaw man", imagen: "", imageURL: URL(string: "https://static.wikia.nocookie.net/chainsaw-man/images/3/3a/Volumen_1.png/revision/latest?cb=20220922005416&path-prefix=es")))
+        modelos.append(Modelo(segue: "anime", menu: "Boku no Hero Academia", imagen: "", imageURL: URL(string: "https://static.wikia.nocookie.net/doblaje/images/5/5d/MHA_Temporada_6.jpg/revision/latest?cb=20230118041958&path-prefix=es")))
+        modelos[0].animes.append(Anime(descripcion: "Evangelion es un anime de ciencia ficción y mecha que sigue la historia de un grupo de adolescentes pilotos de robots gigantes llamados EVA que defienden a la humanidad de criaturas misteriosas conocidas como Ángeles. A medida que la trama se desarrolla, se exploran temas profundos como la identidad, la soledad y la naturaleza de la existencia humana. Con su narrativa compleja y personajes memorables, Evangelion ha dejado una huella duradera en la industria del anime.", capitulo: "25 episodios", temporada: "1 temporada", imagenP: "", imagenC: "", titulo: "Evangelion", imageURL: URL(string: "https://static.wikia.nocookie.net/doblaje/images/a/a6/Neon_Genesis_Evangelion_-_Poster.jpg/revision/latest?cb=20220519030722&path-prefix=es")))
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,7 +40,18 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMenu") as! CeldaMenuController
         celda.lblMenu.text = modelos[indexPath.row].menu
-        celda.lblImagen.image = UIImage(named: modelos[indexPath.row].imagen)
+        //celda.lblImagen.image = UIImage(named:modelos[indexPath.row].imagen)
+        
+        if let imageURL = modelos[indexPath.row].imageURL {
+            URLSession.shared.dataTask(with: imageURL) { data, response, error in
+                if let data = data {
+                    DispatchQueue.main.async {
+                        celda.lblImagen.image = UIImage(data: data)
+                    }
+                }
+            }.resume()
+        }
+        
         return celda
     }
     
@@ -55,57 +69,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
             if let indexPath = TvInicio.indexPathForSelectedRow {
                 let destino = segue.destination as! AnimeController
                 destino.animes = modelos[indexPath.row].animes
-                destino.selectedTitle = modelos[indexPath.row].menu
-            }
-        }
-    }
-    
-    // Función para cargar datos desde la base de datos
-    func cargarDatosDesdeBaseDeDatos() {
-        let context = DataBaseConnection.shared.viewContext
-        
-        // Consulta para obtener los datos de los modelos
-        let fetchRequestModelos: NSFetchRequest<ModeloEntity> = ModeloEntity.fetchRequest()
-        
-        do {
-            let modelosEntities = try context.fetch(fetchRequestModelos)
-            for modeloEntity in modelosEntities {
-                let segue = "anime"
-                let menu = modeloEntity.menu ?? ""
-                let imagen = modeloEntity.imagen ?? ""
-                
-                let modelo = Modelo(segue: segue, menu: menu, imagen: imagen)
-                modelos.append(modelo)
-            }
-        } catch {
-            print("Error al ejecutar la consulta de modelos: \(error)")
-            return
-        }
-        
-        // Consulta para obtener los datos de los animes
-        let fetchRequestAnimes: NSFetchRequest<AnimeEntity> = AnimeEntity.fetchRequest()
-        
-        do {
-            let animesEntities = try context.fetch(fetchRequestAnimes)
-            for animeEntity in animesEntities {
-                let titulo = animeEntity.titulo ?? ""
-                let descripcion = animeEntity.descripcion ?? ""
-                let capitulo = animeEntity.capitulo ?? ""
-                let temporada = animeEntity.temporada ?? ""
-                let imagenP = animeEntity.imagenP ?? ""
-                let imagenC = animeEntity.imagenC ?? ""
-                
-                let anime = Anime(descripcion: descripcion, capitulo: capitulo, temporada: temporada, imagenP: imagenP, imagenC: imagenC, titulo: titulo)
-                animes.append(anime)
-            }
-        } catch {
-            print("Error al ejecutar la consulta de animes: \(error)")
-            return
-        }
-        
-        // Agregar los animes cargados al primer modelo (puedes ajustar esto según tus necesidades)
-        if !animes.isEmpty {
-            modelos[0].animes = animes
+                destino.selectedTitle = modelos[indexPath.row].menu            }
         }
     }
 }
