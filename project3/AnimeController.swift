@@ -27,11 +27,15 @@ class AnimeController: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tableView.dequeueReusableCell(withIdentifier: "anime") as! CeldaAnime2Controller
-        celda.lblDescripcion.text = animes[indexPath.row].descripcion
-        celda.lblTemporadas.text = animes[indexPath.row].temporada
-        celda.lblCapitulos.text = animes[indexPath.row].capitulo
-        return celda
+        if let celda = tableView.dequeueReusableCell(withIdentifier: "anime") as? CeldaAnime2Controller {
+            celda.lblDescripcion.text = animes[indexPath.row].descripcion
+            celda.lblTemporadas.text = animes[indexPath.row].temporada
+            celda.lblCapitulos.text = animes[indexPath.row].capitulo
+            return celda
+        } else {
+            // En caso de que no se pueda obtener la celda correctamente, se devuelve una celda genérica
+            return UITableViewCell()
+        }
     }
     
 }

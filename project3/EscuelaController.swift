@@ -57,8 +57,10 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "anime" {
-            let destino = segue.destination as! AnimeController
-            destino.animes = modelos[TvInicio.indexPathForSelectedRow!.row].animes
+            if let indexPath = TvInicio.indexPathForSelectedRow {
+                let destino = segue.destination as! AnimeController
+                destino.animes = modelos[indexPath.row].animes
+            }
         }
     }
 }
