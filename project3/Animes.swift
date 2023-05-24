@@ -8,7 +8,16 @@
 
 import Foundation
 class Anime {
-    var descripciones : [Descripcion] = []
-    var capitulos : [Capitulo] = []
-    var imagenes : [Imagen] = []
+    var descripcion: String
+    var capitulo: String
+    var temporada: String
+    var imagenP: String
+    var imagenC: String
+    init(descripcion: String, capitulo: String, temporada:String, imagenP:String, imagenC:String) {
+        self.descripcion = descripcion
+        self.capitulo = capitulo
+        self.imagenC = imagenC
+        self.imagenP = imagenP
+        self.temporada = temporada
+    }
 }

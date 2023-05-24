@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 class CeldaAnime2Controller: UITableViewCell {
     
-    @IBOutlet weak var duracion: UILabel!
-    @IBOutlet weak var episodio: UILabel!
+    @IBOutlet weak var lblDescripcion: UILabel!
+    @IBOutlet weak var lblCapitulos: UILabel!
+    @IBOutlet weak var lblTemporadas: UILabel!
 }

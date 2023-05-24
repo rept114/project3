@@ -9,10 +9,9 @@ import UIKit
 
 class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var modelos: [Modelo] = []
-    var capitulos: [Capitulo] = []
-    var descripciones: [Descripcion] = []
     var animes: [Anime] = []
     
+    @IBOutlet weak var TvInicio: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,12 +22,8 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
         modelos.append(Modelo(segue: "anime", menu: "Kimetsu no Yaiba", imagen: "Kimetsu"))
         modelos.append(Modelo(segue: "anime", menu: "Sword art online", imagen: "Kimetsu"))
         modelos.append(Modelo(segue: "anime", menu: "Assesination Classroom", imagen: "Kimetsu"))
-        
-        let anime = Anime() // Crear una instancia de Anime
-        anime.descripciones.append(Descripcion(descripcion: "Yuji Itadori decide pasar el tiempo con el Club de Ocultismo del instituto, pese a poseer unas habilidades atléticas extraordinarias. Con el tiempo, descubre que el mundo del oculto es real, y los miembros del club son atacados. Mientras, el misterioso Megumi Fushiguro está buscando un objeto maldito, y su búsqueda le lleva hasta Itadori…."))
-        anime.capitulos.append(Capitulo(imagen: "", episodio: "Temporada: 1", duracion: "Episodios: 24"))
-        
-        animes.append(anime) // Agregar el objeto Anime al array
+        modelos[0].animes.append(Anime(descripcion: "Naruto, un aprendiz de ninja de la Aldea Oculta de Konoha es un chico travieso que desea llegar a ser el Hokage de la aldea para demostrar a todos lo que vale. Lo que descubre al inicio de la historia es que la gente le mira con desconfianza porque en su interior está encerrado el demonio Kyubi que una vez destruyó la aldea, y que el anterior líder de la misma tuvo que encerrar en su cuerpo siendo aún muy pequeño, a coste de su vida. Aunque sus compañeros no saben esto, tampoco le aprecian porque es mal estudiante y siempre está haciendo bromas. Sin embargo, la forma de actuar y la determinación de Naruto demuestran a los demás que puede llegar muy lejos, y el recelo de los otros chicos se va disipando. Naruto y sus compañeros Sakura y Sasuke, junto a su maestro Kakashi tendrán que enfrentarse a una serie de combates y misiones a lo largo de la historia que les permitirán mejorar y crecer. Naruto se vera enfrentado a sus principales enemigos Akatsuki, Itachi y Kisame.", capitulo: "220 episodios", temporada: "6 temporadas", imagenP: "", imagenC: ""))
+
         
     }
     
@@ -63,8 +58,7 @@ class EscuelaController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "anime" {
             let destino = segue.destination as! AnimeController
-            destino.capitulos = animes[0].capitulos
-            destino.descripciones = animes[0].descripciones
+            destino.animes = modelos[TvInicio.indexPathForSelectedRow!.row].animes
         }
     }
 }

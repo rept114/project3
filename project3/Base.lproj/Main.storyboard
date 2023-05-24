@@ -87,99 +87,71 @@
                                 <rect key="frame" x="0.0" y="88" width="390" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="anime" rowHeight="425" id="X9Y-jd-nQ0" customClass="CeldaAnimeController" customModule="project3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="425"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="655" id="Jsp-sa-CSk" customClass="CeldaAnime2Controller" customModule="project3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="655"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X9Y-jd-nQ0" id="UH9-NW-exF">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="425"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jsp-sa-CSk" id="hnS-PH-UAU">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="655"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-pm-35w">
-                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="425"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kimetsu" translatesAutoresizingMaskIntoConstraints="NO" id="gO6-UQ-UTc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="327.66666666666669"/>
                                                 </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="SZc-pm-35w" firstAttribute="width" secondItem="UH9-NW-exF" secondAttribute="width" id="1fz-4c-Kjd"/>
-                                                <constraint firstItem="SZc-pm-35w" firstAttribute="top" secondItem="UH9-NW-exF" secondAttribute="top" id="6w1-Ho-afT"/>
-                                                <constraint firstItem="SZc-pm-35w" firstAttribute="centerX" secondItem="UH9-NW-exF" secondAttribute="centerX" id="gbJ-6l-lm2"/>
-                                                <constraint firstItem="SZc-pm-35w" firstAttribute="height" secondItem="UH9-NW-exF" secondAttribute="height" id="rAe-35-xPz"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imagen" destination="SZc-pm-35w" id="TcA-to-n2h"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="anime2" rowHeight="104" id="F0e-Wj-vbh" customClass="CeldaAnime2Controller" customModule="project3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="469.66666603088379" width="390" height="104"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F0e-Wj-vbh" id="Azy-OX-eDQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="104"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mbW-HB-MEG">
-                                                    <rect key="frame" x="15" y="6" width="107" height="93"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kimetsu" translatesAutoresizingMaskIntoConstraints="NO" id="PPn-wv-JMb">
+                                                    <rect key="frame" x="10" y="347.66666666666669" width="136.66666666666666" height="98"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episodios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCR-3k-Dfg">
-                                                    <rect key="frame" x="142" y="30" width="108.33333333333331" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moa-TY-UXe">
-                                                    <rect key="frame" x="142" y="56" width="72.333333333333314" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" systemColor="systemGray2Color"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Moa-TY-UXe" firstAttribute="top" secondItem="lCR-3k-Dfg" secondAttribute="bottom" constant="5" id="13s-lM-h83"/>
-                                                <constraint firstItem="mbW-HB-MEG" firstAttribute="width" secondItem="Azy-OX-eDQ" secondAttribute="width" multiplier="0.296125" id="5Yo-qS-Ad2"/>
-                                                <constraint firstItem="Moa-TY-UXe" firstAttribute="width" secondItem="Azy-OX-eDQ" secondAttribute="width" multiplier="0.2" id="Bhz-q9-LrZ"/>
-                                                <constraint firstItem="lCR-3k-Dfg" firstAttribute="width" secondItem="Azy-OX-eDQ" secondAttribute="width" multiplier="0.3" id="K4f-Cz-gI7"/>
-                                                <constraint firstItem="lCR-3k-Dfg" firstAttribute="top" secondItem="Azy-OX-eDQ" secondAttribute="top" constant="30" id="PkL-Fg-Ra1"/>
-                                                <constraint firstAttribute="bottom" secondItem="mbW-HB-MEG" secondAttribute="bottom" constant="5" id="X5y-kO-Wuj"/>
-                                                <constraint firstItem="Moa-TY-UXe" firstAttribute="leading" secondItem="mbW-HB-MEG" secondAttribute="trailing" constant="20" id="ZUx-a1-bkT"/>
-                                                <constraint firstItem="mbW-HB-MEG" firstAttribute="leading" secondItem="Azy-OX-eDQ" secondAttribute="leading" constant="15" id="b7b-Ua-vp0"/>
-                                                <constraint firstItem="mbW-HB-MEG" firstAttribute="top" secondItem="Azy-OX-eDQ" secondAttribute="top" constant="6" id="bqz-s2-7QG"/>
-                                                <constraint firstItem="lCR-3k-Dfg" firstAttribute="leading" secondItem="mbW-HB-MEG" secondAttribute="trailing" constant="20" id="x57-Jm-POr"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="duracion" destination="Moa-TY-UXe" id="ffN-Ka-FO2"/>
-                                            <outlet property="episodio" destination="lCR-3k-Dfg" id="LS9-LM-Ww6"/>
-                                            <outlet property="imagen2" destination="mbW-HB-MEG" id="yuX-VI-qMa"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="anime3" rowHeight="287" id="iWk-fs-FKp">
-                                        <rect key="frame" x="0.0" y="573.66666603088379" width="390" height="287"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iWk-fs-FKp" id="8Fa-fC-j4u">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="287"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voo-mc-Kog">
-                                                    <rect key="frame" x="20" y="20" width="136.66666666666666" height="27"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temporadas:" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUw-e8-Ml5">
+                                                    <rect key="frame" x="166.66666666666666" y="367.66666666666669" width="122.99999999999997" height="26.333333333333314"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ldsjvcndsivlfsdkvmsldkmvlmvxlmfslvkmñkxdmvlfxdkmvlkmfxlmsmvañmcvapmrñasmvkasmdvlamflamvlamlviamvoasrmaonvasnvalsnrflas" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvG-pk-aOn">
-                                                    <rect key="frame" x="30" y="67" width="312" height="81.333333333333314"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitulos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-fB-2TG">
+                                                    <rect key="frame" x="166.66666666666666" y="404" width="87.666666666666657" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-du-yVW">
+                                                    <rect key="frame" x="40" y="465.66666666666669" width="129" height="27.666666666666686"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyA-p4-HAJ">
+                                                    <rect key="frame" x="30" y="513.33333333333337" width="312" height="131.33333333333337"/>
+                                                    <string key="text">Kimetsu no yaiba es una seria que habla de Tanjiro Kamado, un personaje que le pasa una tragedia y conoce el mundo de los demonios.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="voo-mc-Kog" firstAttribute="top" secondItem="8Fa-fC-j4u" secondAttribute="top" constant="20" id="N2Q-aH-bt0"/>
-                                                <constraint firstItem="cvG-pk-aOn" firstAttribute="top" secondItem="voo-mc-Kog" secondAttribute="bottom" constant="20" id="Yxf-jm-o5K"/>
-                                                <constraint firstItem="cvG-pk-aOn" firstAttribute="width" secondItem="8Fa-fC-j4u" secondAttribute="width" multiplier="0.8" id="ZJE-Kx-fSs"/>
-                                                <constraint firstItem="cvG-pk-aOn" firstAttribute="leading" secondItem="8Fa-fC-j4u" secondAttribute="leading" constant="30" id="aWr-d4-azJ"/>
-                                                <constraint firstItem="voo-mc-Kog" firstAttribute="width" secondItem="8Fa-fC-j4u" secondAttribute="width" multiplier="0.35" id="cFG-64-mVs"/>
-                                                <constraint firstItem="voo-mc-Kog" firstAttribute="leading" secondItem="8Fa-fC-j4u" secondAttribute="leading" constant="20" id="vvZ-Pv-gpB"/>
+                                                <constraint firstItem="xyA-p4-HAJ" firstAttribute="top" secondItem="wAG-du-yVW" secondAttribute="bottom" constant="20" id="662-Na-dUi"/>
+                                                <constraint firstItem="PPn-wv-JMb" firstAttribute="width" secondItem="hnS-PH-UAU" secondAttribute="width" multiplier="0.35" id="6yP-tN-449"/>
+                                                <constraint firstItem="xyA-p4-HAJ" firstAttribute="width" secondItem="hnS-PH-UAU" secondAttribute="width" multiplier="0.8" id="8or-hG-i1L"/>
+                                                <constraint firstItem="PPn-wv-JMb" firstAttribute="leading" secondItem="hnS-PH-UAU" secondAttribute="leading" constant="10" id="9c3-Rd-dOy"/>
+                                                <constraint firstItem="gO6-UQ-UTc" firstAttribute="top" secondItem="hnS-PH-UAU" secondAttribute="top" id="A4K-xP-jU8"/>
+                                                <constraint firstItem="h5G-fB-2TG" firstAttribute="top" secondItem="EUw-e8-Ml5" secondAttribute="bottom" constant="10" id="ElQ-xK-d2h"/>
+                                                <constraint firstItem="wAG-du-yVW" firstAttribute="top" secondItem="PPn-wv-JMb" secondAttribute="bottom" constant="20" id="G8R-ab-jxN"/>
+                                                <constraint firstItem="gO6-UQ-UTc" firstAttribute="width" secondItem="hnS-PH-UAU" secondAttribute="width" id="IOM-Tf-4hN"/>
+                                                <constraint firstItem="EUw-e8-Ml5" firstAttribute="top" secondItem="gO6-UQ-UTc" secondAttribute="bottom" constant="40" id="LjP-tE-W6a"/>
+                                                <constraint firstItem="PPn-wv-JMb" firstAttribute="height" secondItem="hnS-PH-UAU" secondAttribute="height" multiplier="0.15" id="P5Y-wz-5Yb"/>
+                                                <constraint firstItem="PPn-wv-JMb" firstAttribute="top" secondItem="gO6-UQ-UTc" secondAttribute="bottom" constant="20" id="QE0-0a-Hih"/>
+                                                <constraint firstItem="EUw-e8-Ml5" firstAttribute="leading" secondItem="PPn-wv-JMb" secondAttribute="trailing" constant="20" id="RnH-Gg-1oh"/>
+                                                <constraint firstItem="xyA-p4-HAJ" firstAttribute="leading" secondItem="hnS-PH-UAU" secondAttribute="leading" constant="30" id="SCu-IJ-ful"/>
+                                                <constraint firstItem="gO6-UQ-UTc" firstAttribute="centerX" secondItem="hnS-PH-UAU" secondAttribute="centerX" id="VYT-XB-iKU"/>
+                                                <constraint firstItem="gO6-UQ-UTc" firstAttribute="height" secondItem="hnS-PH-UAU" secondAttribute="height" multiplier="0.5" id="g02-J4-mib"/>
+                                                <constraint firstItem="wAG-du-yVW" firstAttribute="leading" secondItem="hnS-PH-UAU" secondAttribute="leading" constant="40" id="nFk-YT-VZ9"/>
+                                                <constraint firstItem="h5G-fB-2TG" firstAttribute="leading" secondItem="PPn-wv-JMb" secondAttribute="trailing" constant="20" id="yx4-O0-eNj"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblCapitulos" destination="h5G-fB-2TG" id="TfE-eg-g4t"/>
+                                            <outlet property="lblDescripcion" destination="xyA-p4-HAJ" id="97f-fp-AV8"/>
+                                            <outlet property="lblTemporadas" destination="EUw-e8-Ml5" id="KIZ-nZ-4vf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -558,6 +530,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Inicio" id="dk7-Rs-CSk"/>
                     <connections>
+                        <outlet property="TvInicio" destination="RL4-xe-bjb" id="nAx-09-P8F"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="horarioasistencia" id="2Ei-dY-2Hk"/>
                         <segue destination="Lgg-qO-VNj" kind="show" identifier="docente" id="MQS-zD-MMa"/>
                         <segue destination="Ghr-jK-qax" kind="show" identifier="pagos" id="FuJ-4e-GCX"/>
@@ -1101,6 +1074,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Kimetsu" width="185" height="272"/>
         <image name="lock.open.fill" catalog="system" width="128" height="112"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
@@ -1111,9 +1085,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
