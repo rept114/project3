@@ -13,11 +13,13 @@ class Anime {
     var temporada: String
     var imagenP: String
     var imagenC: String
-    init(descripcion: String, capitulo: String, temporada:String, imagenP:String, imagenC:String) {
+    var titulo: String
+    init(descripcion: String, capitulo: String, temporada:String, imagenP:String, imagenC:String, titulo: String) {
         self.descripcion = descripcion
         self.capitulo = capitulo
         self.imagenC = imagenC
         self.imagenP = imagenP
         self.temporada = temporada
+        self.titulo = titulo
     }
 }

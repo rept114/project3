@@ -95,32 +95,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kimetsu" translatesAutoresizingMaskIntoConstraints="NO" id="gO6-UQ-UTc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="327.66666666666669"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="229.33333333333334"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kimetsu" translatesAutoresizingMaskIntoConstraints="NO" id="PPn-wv-JMb">
-                                                    <rect key="frame" x="10" y="347.66666666666669" width="136.66666666666666" height="98"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kimetsu" translatesAutoresizingMaskIntoConstraints="NO" id="PPn-wv-JMb">
+                                                    <rect key="frame" x="10" y="249.33333333333334" width="136.66666666666666" height="98.333333333333343"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temporadas:" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUw-e8-Ml5">
-                                                    <rect key="frame" x="166.66666666666666" y="367.66666666666669" width="122.99999999999997" height="26.333333333333314"/>
+                                                    <rect key="frame" x="166.66666666666666" y="309.33333333333331" width="122.99999999999997" height="26.333333333333314"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitulos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-fB-2TG">
-                                                    <rect key="frame" x="166.66666666666666" y="404" width="87.666666666666657" height="24"/>
+                                                    <rect key="frame" x="166.66666666666666" y="345.66666666666669" width="87.666666666666657" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAG-du-yVW">
-                                                    <rect key="frame" x="40" y="465.66666666666669" width="129" height="27.666666666666686"/>
+                                                    <rect key="frame" x="40" y="367.66666666666669" width="129" height="27.666666666666686"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyA-p4-HAJ">
-                                                    <rect key="frame" x="30" y="513.33333333333337" width="312" height="131.33333333333337"/>
+                                                    <rect key="frame" x="30" y="415.33333333333331" width="312" height="131.33333333333331"/>
                                                     <string key="text">Kimetsu no yaiba es una seria que habla de Tanjiro Kamado, un personaje que le pasa una tragedia y conoce el mundo de los demonios.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
@@ -136,13 +136,13 @@
                                                 <constraint firstItem="h5G-fB-2TG" firstAttribute="top" secondItem="EUw-e8-Ml5" secondAttribute="bottom" constant="10" id="ElQ-xK-d2h"/>
                                                 <constraint firstItem="wAG-du-yVW" firstAttribute="top" secondItem="PPn-wv-JMb" secondAttribute="bottom" constant="20" id="G8R-ab-jxN"/>
                                                 <constraint firstItem="gO6-UQ-UTc" firstAttribute="width" secondItem="hnS-PH-UAU" secondAttribute="width" id="IOM-Tf-4hN"/>
-                                                <constraint firstItem="EUw-e8-Ml5" firstAttribute="top" secondItem="gO6-UQ-UTc" secondAttribute="bottom" constant="40" id="LjP-tE-W6a"/>
+                                                <constraint firstItem="EUw-e8-Ml5" firstAttribute="top" secondItem="gO6-UQ-UTc" secondAttribute="bottom" constant="80" id="LjP-tE-W6a"/>
                                                 <constraint firstItem="PPn-wv-JMb" firstAttribute="height" secondItem="hnS-PH-UAU" secondAttribute="height" multiplier="0.15" id="P5Y-wz-5Yb"/>
                                                 <constraint firstItem="PPn-wv-JMb" firstAttribute="top" secondItem="gO6-UQ-UTc" secondAttribute="bottom" constant="20" id="QE0-0a-Hih"/>
                                                 <constraint firstItem="EUw-e8-Ml5" firstAttribute="leading" secondItem="PPn-wv-JMb" secondAttribute="trailing" constant="20" id="RnH-Gg-1oh"/>
                                                 <constraint firstItem="xyA-p4-HAJ" firstAttribute="leading" secondItem="hnS-PH-UAU" secondAttribute="leading" constant="30" id="SCu-IJ-ful"/>
                                                 <constraint firstItem="gO6-UQ-UTc" firstAttribute="centerX" secondItem="hnS-PH-UAU" secondAttribute="centerX" id="VYT-XB-iKU"/>
-                                                <constraint firstItem="gO6-UQ-UTc" firstAttribute="height" secondItem="hnS-PH-UAU" secondAttribute="height" multiplier="0.5" id="g02-J4-mib"/>
+                                                <constraint firstItem="gO6-UQ-UTc" firstAttribute="height" secondItem="hnS-PH-UAU" secondAttribute="height" multiplier="0.35" id="g02-J4-mib"/>
                                                 <constraint firstItem="wAG-du-yVW" firstAttribute="leading" secondItem="hnS-PH-UAU" secondAttribute="leading" constant="40" id="nFk-YT-VZ9"/>
                                                 <constraint firstItem="h5G-fB-2TG" firstAttribute="leading" secondItem="PPn-wv-JMb" secondAttribute="trailing" constant="20" id="yx4-O0-eNj"/>
                                             </constraints>

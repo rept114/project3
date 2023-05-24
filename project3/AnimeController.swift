@@ -10,20 +10,8 @@ import Foundation
 import UIKit
 
 class AnimeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var TvAnimes: UITableView!
-    var animes: [Anime] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animes.count
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,4 +26,29 @@ class AnimeController: UIViewController, UITableViewDelegate, UITableViewDataSou
         }
     }
     
+    @IBOutlet weak var TvAnimes: UITableView!
+    var animes: [Anime] = []
+    var selectedTitle: String?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Verificar si hay al menos un anime en la lista
+        if let firstAnime = animes.first {
+            // Establecer el título del elemento de navegación con el título del primer anime
+            self.title = firstAnime.titulo
+        }
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedTitle = animes[indexPath.row].titulo
+        
+        // Realiza la navegación o cualquier otra acción aquí
+    }
+
+    
+}
 }
