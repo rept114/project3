@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 class CeldaAnime2Controller: UITableViewCell {
     
+    @IBOutlet weak var lblImagenC: UIImageView!
+    @IBOutlet weak var lblImagenP: UIImageView!
     @IBOutlet weak var lblDescripcion: UILabel!
     @IBOutlet weak var lblCapitulos: UILabel!
     @IBOutlet weak var lblTemporadas: UILabel!

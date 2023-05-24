@@ -150,6 +150,8 @@
                                         <connections>
                                             <outlet property="lblCapitulos" destination="h5G-fB-2TG" id="TfE-eg-g4t"/>
                                             <outlet property="lblDescripcion" destination="xyA-p4-HAJ" id="97f-fp-AV8"/>
+                                            <outlet property="lblImagenC" destination="PPn-wv-JMb" id="Lth-BP-LxJ"/>
+                                            <outlet property="lblImagenP" destination="gO6-UQ-UTc" id="L6e-JL-jEQ"/>
                                             <outlet property="lblTemporadas" destination="EUw-e8-Ml5" id="KIZ-nZ-4vf"/>
                                         </connections>
                                     </tableViewCell>
@@ -489,6 +491,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblImagen" destination="2Z9-b0-lzy" id="Fei-xj-Ziz"/>
                                             <outlet property="lblMenu" destination="t7u-EU-5b8" id="CIR-Ul-CVw"/>
                                         </connections>
                                     </tableViewCell>

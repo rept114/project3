@@ -11,4 +11,5 @@ import UIKit
 class CeldaMenuController: UITableViewCell  {
     @IBOutlet weak var lblMenu: UILabel!
     
+    @IBOutlet weak var lblImagen: UIImageView!
 }
